@@ -1,0 +1,22 @@
+.header{
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    
+    }
+
+.logo_header{
+
+display: flex;
+justify-content: left;
+
+}
+
+.links_header{
+
+display: flex;
+gap: 20px;
+
+}

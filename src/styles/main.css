@@ -25,6 +25,9 @@
     background-color: #212529;
 }
 
+#background{
+    background: linear-gradient(#212529 0%, #7209B7 2%, #7209B4 25%, #3A0689 63%, #03045E 100%);
+}
 
 .text_logo {
     font-family: Instrument Sans;
@@ -234,7 +237,6 @@
 
 #atividades {
     .container-atividades {
-        background: linear-gradient(to bottom, #6A040F, #E85D04);
         display: flex;
         flex-direction: column;
         gap: 160px;

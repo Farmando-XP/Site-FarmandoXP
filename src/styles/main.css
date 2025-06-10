@@ -32,7 +32,11 @@
 .text_logo {
     font-family: Instrument Sans;
     color: #FEFAE0;
+    display: flex;
+    align-items: center;
 }
+    
+
 
 .text_home {
     font-family: Instrument Sans;
@@ -91,6 +95,7 @@
     font-size: 25px;
     font-family: Instrument Sans;
 }
+
 
 .button_principal {
 

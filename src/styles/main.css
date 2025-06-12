@@ -179,10 +179,12 @@
 }
 
 #projetos .text .main-text {
-    width: 45rem;
-    text-align: justify;
+    width: 40rem;
     padding: 1rem 4rem 1rem 4rem;
-
+    font-size: 1.2rem;
+    p{
+        margin-bottom: 1rem;
+    }
 }
 
 #projetos .text .btn #vejaMais {

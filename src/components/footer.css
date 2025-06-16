@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
 footer{
+    font-family: Instrument Sans;
     background-color: #212529;
     height: 488px;
     display: flex;

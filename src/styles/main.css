@@ -1,0 +1,419 @@
+/* Introduçao - Thais */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('../components/navbar.css');
+@import url('../components/footer.css');
+
+:root {
+    --purple-primary: #240046;
+    --purple-secondary: #3C096C;
+    --purple-terciary: #7209B7;
+    --purple-quartenary: #B5179E;
+    --royal-blue-primary: #3F37C9;
+    --royal-blue-secondary: #4361EE;
+    --royal-blue-terciary: #647ff5;
+    --white: #D9D9D9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo-geral {
+    background-color: #212529;
+}
+
+#background{
+    background: linear-gradient(#212529 0%, #7209B7 2%, #7209B4 25%, #3A0689 63%, #03045E 100%);
+}
+
+.text_logo {
+    font-family: Instrument Sans;
+    color: #FEFAE0;
+    display: flex;
+    align-items: center;
+}
+    
+
+
+.text_home {
+    font-family: Instrument Sans;
+    font-size: 20px;
+    color: #FEFAE0;
+    text-decoration: none;
+    margin: 12px;
+    margin-top: 18px;
+
+}
+
+.text_historia {
+    font-family: Instrument Sans;
+    font-size: 20px;
+    color: #FEFAE0;
+    text-decoration: none;
+    margin: 12px;
+    margin-top: 18px;
+
+}
+
+.button_header {
+
+    color: #FEFAE0;
+    background-color: #7209B7CC;
+    font-family: Instrument Sans;
+    font-size: 20px;
+    border: #7209B7CC;
+    border-radius: 10px;
+    width: 150px;
+    margin: 10px;
+    height: 41.44px;
+    cursor: pointer;
+
+}
+
+.title_principal {
+
+    font-family: Instrument Sans;
+    font-size: 40px;
+    color: #FEFAE0;
+    text-align: center;
+
+}
+
+.text_farmandoXP {
+
+    color: #7209B7CC;
+
+}
+
+.text_principal {
+
+    color: #FEFAE0;
+
+    font-size: 25px;
+    font-family: Instrument Sans;
+}
+
+
+.button_principal {
+
+    color: #FEFAE0;
+    background-color: #7209B7CC;
+    font-family: Instrument Sans;
+    font-size: 20px;
+    border: #7209B7CC;
+    border-radius: 20px;
+    width: 569px;
+    height: 73.71px;
+    cursor: pointer;
+
+}
+
+
+.conteudo_principal {
+    display: flex;
+    margin: 80px;
+}
+
+.informacoes_principais {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.button_contato {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+/* Projetos - Heitor */
+
+#projetos {
+    padding: 3rem;
+    align-content: center;
+    justify-items: center;
+    color: var(--white);
+    margin-bottom: 10rem;
+    box-sizing: border-box;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+#projetos .text {
+    display: flex;
+}
+
+#projetos .text .main-title {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    max-width: 52rem;
+
+
+    h1 {
+        font-size: 8rem;
+        color: var(--purple-secondary);
+
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        color: var(--purple-quartenary);
+        transform: translate3d(-6rem, 1rem, 0);
+    }
+
+    h2 {
+        font-size: 2rem;
+        transform: translate3d(-16.5rem, 3rem, 0);
+
+    }
+}
+
+#projetos .text .main-text {
+    width: 40rem;
+    padding: 1rem 4rem 1rem 4rem;
+    font-size: 1.2rem;
+    p{
+        margin-bottom: 1rem;
+    }
+}
+
+#projetos .text .btn #vejaMais {
+    color: var(--white);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: var(--purple-secondary);
+    padding: 1rem 2.8rem;
+    border-radius: 1.4rem;
+    margin: 1.5rem 6.5rem;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+#projetos .text .btn #vejaMais:hover {
+    transform: scale(1.1);
+    background-color: var(--purple-primary);
+}
+
+#dotPattern {
+    align-content: center;
+    justify-items: center;
+    margin-right: 1rem;
+
+}
+
+.add {
+    align-content: center;
+    justify-items: center;
+}
+
+#dotPattern #pImg1 {
+    width: 18rem;
+}
+
+#projetos .imgs {
+    display: flex;
+    justify-content: space-around;
+}
+
+#projetos .imgs .img {
+    align-content: center;
+    justify-items: center;
+    padding: 1rem;
+}
+
+#projetos .imgs .img img {
+    width: 20rem;
+    margin: 2rem 5rem;
+}
+
+
+#projetos .imgs .img#img2 {
+    transform: translateY(10rem);
+}
+
+
+/* Atividades - Lucas */
+
+#atividades {
+
+    .container-atividades {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 20rem;
+        box-sizing: border-box;
+        font-family: "Instrument Sans", sans-serif;
+    }
+
+    .text-and-image {
+        display: flex;
+        flex-direction: row;
+        gap: 23px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        height: 600px;
+       
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+        max-width: 606px;
+
+    }
+
+    .text h1{
+        font-size: 8rem;
+        color: var(--royal-blue-primary);
+    }
+
+    .text h3 {
+        font-size: 1.5rem;
+        color: var(--royal-blue-terciary);
+        transform: translate3d(2rem, -5rem, 0);
+    }
+
+    .text h2 {
+        font-size: 2rem;
+        color: var(--white);
+        transform: translate3d(2rem, -5rem, 0);
+        margin-top: 2px;
+    }
+
+    .text p {
+        font-size: 1.2rem;
+        width: 526px;
+        height: 146px;
+        color: #D9D9D9;
+        margin-top: -3rem;
+    }
+
+
+
+    .image div {
+        background-color: black;
+        width: 469px;
+        height: 375px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 40px;
+
+    }
+
+    .card {
+        background: linear-gradient(to top, var(--royal-blue-secondary), #4B0796);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 290px;
+        height: 400px;
+        padding: 30px;
+        border-radius: 10px;
+    
+    }
+
+    .card h4 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 20px;
+        color: #D9D9D9;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+        color: #D9D9D9;
+    }
+
+    .card p {
+        font-size: 1rem;
+        width: 315px;
+        text-align: justify;
+        color: #D9D9D9;
+    }
+}
+
+
+ /* Onde estamos - Higor */
+
+#onde-estamos {
+    .container {
+        width: 50% ;
+        margin: auto;
+        text-align: left;
+        font-family: "Instrument Sans", sans-serif;
+    }
+
+    .section-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 56px;
+        margin-bottom: 24px;
+    }
+
+    .number {
+        font-size: 8rem;
+        font-weight: bold;
+        color: #7209B7;
+        position: relative;
+    }
+
+    .number span {
+        width: 180px;
+        position: absolute;
+        top: 40%;
+        left: 20px;
+        font-size: 1.5rem;
+        color: #4361EE
+    }
+
+    .text-content {
+        width: 60%;
+    }
+
+    .text-content h2 {
+        margin: 0;
+        color: #D9D9D9;
+        font-size: 2rem;
+    }
+
+    .text-content p {
+        margin-top: 12px;
+        font-size: 1.2rem;
+        color: #D9D9D9;
+    }
+
+    .maps {
+        width: 100%;
+        height: 750px;
+        border-radius: 42px;
+        margin: 0px 0px 150px 0px;
+    }
+}
+

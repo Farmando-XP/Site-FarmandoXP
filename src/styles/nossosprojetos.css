@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('../components/navbar.css');
+@import url('../components/footer.css');
 
 * {
 
@@ -6,7 +8,7 @@
     padding: 0px;
 }
 
-.conteudogeral {
+body {
 
 
     background-color: #212121;
@@ -18,7 +20,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, #2196F3, #E91E63);
+   
 
 }
 
@@ -108,7 +110,7 @@
 }
 
 .conteudo-central,
-.conteudo-central1 {
+.conteudo-central1, .conteudo-central2 {
 
     margin: 50px;
     display: flex;
@@ -119,19 +121,6 @@
     color: #FEFAE0;
 }
 
-.conteudo-central2{
-
- 
- margin-top:0px ;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-
-    justify-content: center;
-    color: #FEFAE0;
-
-
-}
 
 .conteudo-card,
 .conteudo-card1,
@@ -139,8 +128,9 @@
 
     border: 3px solid #454545;
     
-    border-radius: 10px;
+    border-radius: 20px;
     width: 500px;
+     overflow: hidden;
     color: #FEFAE0;
 
 }
@@ -153,6 +143,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 5px;
+    padding: 15px;
     color: #FEFAE0;
     align-items: center;
 
@@ -184,9 +175,10 @@
 .texto-card2 {
 
     padding: 8px;
-    color: #FEFAE0;
+    color: #D9D9D9;
     font-family: Instrument Sans;
     font-size: 25px;
+    padding: 20px;
 
 }
 
@@ -196,45 +188,3 @@
 
 }
 
-footer{
-    background-color: #212529;
-    height: 488px;
-    display: flex;
-    justify-content: center;
-}
-
-#container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 590px;
-    margin-top: 69px;
-}
-
-#img-footer{
-    height: 164px;
-    width: 164px;
-}
-
-#desenfarm{
-    display: flex;
-}
-
-.italico{
-    color: #FEFAE0;
-    font-style: italic;
-}
-
-.negrito{
-    color: #FEFAE0;
-    font-weight: bold;
-}
-
-#a-footer{
-    font-size: 16px;
-    font-style: italic;
-    color: #4361EE;
-    font-weight: normal;
-    text-decoration: none;
-}

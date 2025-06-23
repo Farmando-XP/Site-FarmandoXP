@@ -1,160 +1,686 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nossos Projetos</title>
+    <link rel="stylesheet" href="../styles/nossosprojetos.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nossos Projetos</title>
-  <link rel="stylesheet" href="../styles/nossosprojetos.css">
-</head>
+  <body>
+    <div id="fundoCard" class="hide"></div>
+    <div class="conteudogeral">
+      <header>
+        <div class="header">
+          <div class="logo_header">
+            <img src="../../assets/home/Logo_FarmandoXP 1.png" alt="logo FarmandoXP" />
+            <h2 class="text_logo">FarmandoXP</h2>
+          </div>
+          <div class="links_header">
+            <a class="text_home" href="../../index.html">Home</a>
+            <a href="#" class="text_historia">História</a>
+            <a href="#"><button class="button_header">Contato</button> </a>
+          </div>
+        </div>
+      </header>
 
-<body>
-  <div class="conteudogeral">
-    <header>
-      <div class="header">
-        <div class="logo_header">
-          <img src="../../assets/home/Logo_FarmandoXP 1.png" alt="logo FarmandoXP">
-          <h2 class="text_logo">FarmandoXP</h2>
-        </div>
-        <div class="links_header">
-          <a class="text_home" href="../../index.html">Home</a>
-          <a href="#" class="text_historia">História</a>
-          <a href="#"><button class="button_header">Contato</button> </a>
-        </div>
+      <br />
+
+      <h1 class="title_projetos">Veja nossos projetos!</h1>
+      <br />
+      <div class="logo_projeto">
+        <img src="../../assets/nossosprojetos/Logo_Title.png" alt="logo" />
       </div>
-    </header>
+      <br />
+      <div class="linha"></div>
+      <div class="conteudo-central">
 
-    <br>
+        <div class="conteudo-card" onclick="toggleModal('1')">
+          <div class="cor"></div>
+          <div class="contorno">
+            <div class="titulo-card">
+              <h2 class="nome-card">Project Name</h2>
+              <h2 class="data-card">2025</h2>
+            </div>
 
-    <h1 class="title_projetos">Veja nossos projetos!</h1>
-    <br>
-    <div class="logo_projeto">
-      <img src="../../assets/nossosprojetos/Logo_Title.png" alt="logo">
-    </div>
-    <br>
-    <div class="linha"> </div>
-    <div class="conteudo-central">
-
-      <div class="conteudo-card">
-
-        <div class="cor"> </div>
-        <div class="contorno">
-          <div class="titulo-card">
-            <h2 class="nome-card">Project Name</h2>
-            <h2 class="data-card">2025</h2>
+            <p class="texto-card">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              temporibus molestiae incidunt, doloribus minus dolores suscipit
+              ipsa ab, in eveniet provident cupiditate perferendis repellendus
+              sunt labore quisquam.
+            </p>
+          </div>
+        </div>
+        <div class="modalCard hide" id="1" >
+            <div id="fecharModal" onclick="toggleModal('1')"><i class="fa-solid fa-chevron-left"></i><strong>Back</strong></div>
+            <div class="descricaoProjeto">
+                <div class="fotoModal"><img src="/assets/home/Logo_FarmandoXP 1.png" alt=""></div>
+                <div class="textoModal">
+                  <h2>2025</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo recusandae ipsa deserunt quaerat, voluptatem quibusdam, ipsum impedit pariatur doloribus incidunt iure nobis? Minima commodi molestias minus doloribus, saepe veniam!</p>
+                </div>
+                
+            </div>
+            <div class="participantes">
+              <h2 class="tituloParticipantes">Conheça cada um mais de perto!</h2>
+              <div class="togglerParticipantes">
+                <div class="toggler active t1">Programadores</div>
+                <div class="toggler t2">Designer</div>
+              </div>
+                <div class="sections">
+                  <section>
+                    <div class="participante programmers active">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 17 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante programmers active">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 17 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante designers">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 18 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante designers">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 20 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section></section>
+                </div>
+            </div>
           </div>
 
-          <p class="texto-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam temporibus molestiae
-            incidunt, doloribus minus dolores suscipit ipsa ab, in eveniet provident cupiditate perferendis repellendus
-            sunt labore quisquam. 
-          </p>
+        <div class="conteudo-card" onclick="toggleModal('2')">
+          <div class="cor"></div>
+          <div class="contorno">
+            <div class="titulo-card">
+              <h2 class="nome-card">Project Name</h2>
+              <h2 class="data-card">2025</h2>
+            </div>
 
-        </div>
-      </div>
-      <div class="conteudo-card">
-
-        <div class="cor">
-
-        </div>
-        <div class="contorno">
-          <div class="titulo-card">
-            <h2 class="nome-card">Project Name</h2>
-            <h2 class="data-card">2025</h2>
+            <p class="texto-card">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              temporibus molestiae incidunt, doloribus minus dolores suscipit
+              ipsa ab, in eveniet provident cupiditate perferendis repellendus
+              sunt labore quisquam.
+            </p>
           </div>
-
-          <p class="texto-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam temporibus molestiae
-            incidunt, doloribus minus dolores suscipit ipsa ab, in eveniet provident cupiditate perferendis repellendus
-            sunt labore quisquam.
-          </p>
         </div>
-      </div>
-
-    </div>
-
-    <div class="conteudo-central1">
-      <div class="conteudo-card1">
-        <div class="cor"> </div>
-        <div class="contorno">
-          <div class="titulo-card1">
-            <h2 class="nome-card">Project Name</h2>
-            <h2 class="data-card">2025</h2>
+        <div class="modalCard hide" id="2" >
+            <div id="fecharModal"  onclick="toggleModal('2')"><i class="fa-solid fa-chevron-left"  onclick="toggleModal('2')"></i><strong>Back</strong></div>
+            <div class="descricaoProjeto">
+                <div class="fotoModal"><img src="/assets/home/Logo_FarmandoXP 1.png" alt=""></div>
+                <div class="textoModal">
+                  <h2>2025</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo recusandae ipsa deserunt quaerat, voluptatem quibusdam, ipsum impedit pariatur doloribus incidunt iure nobis? Minima commodi molestias minus doloribus, saepe veniam!</p>
+                </div>
+                
+            </div>
+            <div class="participantes">
+              <h2 class="tituloParticipantes">Conheça cada um mais de perto!</h2>
+              <div class="togglerParticipantes">
+                <div class="toggler active t1">Programadores</div>
+                <div class="toggler t2">Designer</div>
+              </div>
+                <div class="sections">
+                  <section>
+                    <div class="participante programmers active">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 17 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante programmers active">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 17 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante designers">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 18 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante designers">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 20 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section></section>
+                </div>
+            </div>
           </div>
-
-          <p class="texto-card1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam temporibus molestiae
-            incidunt, doloribus minus dolores suscipit ipsa ab, in eveniet provident cupiditate perferendis repellendus
-            sunt labore quisquam.
-          </p>
-        </div>
-      </div>
-      <div class="conteudo-card1">
-
-        <div class="cor"> </div>
-        <div class="contorno">
-        <div class="titulo-card1">
-          <h2 class="nome-card">Project Name</h2>
-          <h2 class="data-card">2025</h2>
-        </div>
-        
-          <p class="texto-card1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam temporibus molestiae
-            incidunt, doloribus minus dolores suscipit ipsa ab, in eveniet provident cupiditate perferendis repellendus
-            sunt labore quisquam. 
-          </p>
-        </div>
       </div>
 
+      <div class="conteudo-central1">
+        <div class="conteudo-card1" onclick="toggleModal('3')">
+          <div class="cor"></div>
+          <div class="contorno">
+            <div class="titulo-card1">
+              <h2 class="nome-card">Project Name</h2>
+              <h2 class="data-card">2025</h2>
+            </div>
+
+            <p class="texto-card1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              temporibus molestiae incidunt, doloribus minus dolores suscipit
+              ipsa ab, in eveniet provident cupiditate perferendis repellendus
+              sunt labore quisquam.
+            </p>
+          </div>
+        </div>
+        <div class="modalCard hide" id="3" >
+            <div id="fecharModal"  onclick="toggleModal('3')"><i class="fa-solid fa-chevron-left"  onclick="toggleModal('3')"></i><strong>Back</strong></div>
+            <div class="descricaoProjeto">
+                <div class="fotoModal"><img src="/assets/home/Logo_FarmandoXP 1.png" alt=""></div>
+                <div class="textoModal">
+                  <h2>2025</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo recusandae ipsa deserunt quaerat, voluptatem quibusdam, ipsum impedit pariatur doloribus incidunt iure nobis? Minima commodi molestias minus doloribus, saepe veniam!</p>
+                </div>
+                
+            </div>
+            <div class="participantes">
+              <h2 class="tituloParticipantes">Conheça cada um mais de perto!</h2>
+              <div class="togglerParticipantes">
+                <div class="toggler active t1">Programadores</div>
+                <div class="toggler t2">Designer</div>
+              </div>
+                <div class="sections">
+                  <section>
+                    <div class="participante programmers active">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 17 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante programmers active">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 17 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante designers">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 18 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante designers">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 20 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section></section>
+                </div>
+            </div>
+          </div>
+        <div class="conteudo-card1" onclick="toggleModal('4')">
+          <div class="cor"></div>
+          <div class="contorno">
+            <div class="titulo-card1">
+              <h2 class="nome-card">Project Name</h2>
+              <h2 class="data-card">2025</h2>
+            </div>
+
+            <p class="texto-card1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              temporibus molestiae incidunt, doloribus minus dolores suscipit
+              ipsa ab, in eveniet provident cupiditate perferendis repellendus
+              sunt labore quisquam.
+            </p>
+          </div>
+        </div>
+        <div class="modalCard hide" id="4" >
+            <div id="fecharModal" onclick="toggleModal('4')"><i class="fa-solid fa-chevron-left"></i><strong>Back</strong></div>
+            <div class="descricaoProjeto">
+                <div class="fotoModal"><img src="/assets/home/Logo_FarmandoXP 1.png" alt=""></div>
+                <div class="textoModal">
+                  <h2>2025</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo recusandae ipsa deserunt quaerat, voluptatem quibusdam, ipsum impedit pariatur doloribus incidunt iure nobis? Minima commodi molestias minus doloribus, saepe veniam!</p>
+                </div>
+                
+            </div>
+            <div class="participantes">
+              <h2 class="tituloParticipantes">Conheça cada um mais de perto!</h2>
+              <div class="togglerParticipantes">
+                <div class="toggler active t1">Programadores</div>
+                <div class="toggler t2">Designer</div>
+              </div>
+                <div class="sections">
+                  <section>
+                    <div class="participante programmers active">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 17 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante programmers active">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 17 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante designers">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 18 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante designers">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 20 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section></section>
+                </div>
+            </div>
+          </div>
+      </div>
+      
+
+      <div class="conteudo-central2">
+        <div class="conteudo-card2" onclick="toggleModal('5')">
+          <div class="cor"></div>
+          <div class="contorno">
+            <div class="titulo-card2">
+              <h2 class="nome-card">Project Name</h2>
+              <h2 class="data-card">2025</h2>
+            </div>
+            <p class="texto-card2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              temporibus molestiae incidunt, doloribus minus dolores suscipit
+              ipsa ab, in eveniet provident cupiditate perferendis repellendus
+              sunt labore quisquam.
+            </p>
+          </div>
+        </div>
+        <div class="modalCard hide" id="5" >
+            <div id="fecharModal"  onclick="toggleModal('5')"><i class="fa-solid fa-chevron-left"  onclick="toggleModal('5')"></i><strong>Back</strong></div>
+            <div class="descricaoProjeto">
+                <div class="fotoModal"><img src="/assets/home/Logo_FarmandoXP 1.png" alt=""></div>
+                <div class="textoModal">
+                  <h2>2025</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo recusandae ipsa deserunt quaerat, voluptatem quibusdam, ipsum impedit pariatur doloribus incidunt iure nobis? Minima commodi molestias minus doloribus, saepe veniam!</p>
+                </div>
+                
+            </div>
+            <div class="participantes">
+              <h2 class="tituloParticipantes">Conheça cada um mais de perto!</h2>
+              <div class="togglerParticipantes">
+                <div class="toggler active t1">Programadores</div>
+                <div class="toggler t2">Designer</div>
+              </div>
+                <div class="sections">
+                  <section>
+                    <div class="participante programmers active">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 17 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante programmers active">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 17 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante designers">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 18 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante designers">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 20 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section></section>
+                </div>
+            </div>
+          </div>
+        <div class="conteudo-card2" onclick="toggleModal('6')">
+          <div class="cor"></div>
+          <div class="contorno">
+            <div class="titulo-card2">
+              <h2 class="nome-card">Project Name</h2>
+              <h2 class="data-card">2025</h2>
+            </div>
+            <p class="texto-card2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              temporibus molestiae incidunt, doloribus minus dolores suscipit
+              ipsa ab, in eveniet provident cupiditate perferendis repellendus
+              sunt labore quisquam.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="modalCard hide" id="6" >
+            <div id="fecharModal"  onclick="toggleModal('6')"  onclick="toggleModal('6')"><i class="fa-solid fa-chevron-left"  onclick="toggleModal('6')"></i><strong>Back</strong></div>
+            <div class="descricaoProjeto">
+                <div class="fotoModal"><img src="/assets/home/Logo_FarmandoXP 1.png" alt=""></div>
+                <div class="textoModal">
+                  <h2>2025</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo recusandae ipsa deserunt quaerat, voluptatem quibusdam, ipsum impedit pariatur doloribus incidunt iure nobis? Minima commodi molestias minus doloribus, saepe veniam!</p>
+                </div>
+                
+            </div>
+            <div class="participantes">
+              <h2 class="tituloParticipantes">Conheça cada um mais de perto!</h2>
+              <div class="togglerParticipantes">
+                <div class="toggler active t1">Programadores</div>
+                <div class="toggler t2">Designer</div>
+              </div>
+                <div class="sections">
+                  <section>
+                    <div class="participante programmers active">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 17 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante programmers active">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 17 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante designers">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 18 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="participante designers">
+                      <div class="fotoParticipante">
+                        <img src="/assets/home/Logo_FarmandoXP 1.png" alt="">
+                      </div>
+                      <div class="textoParticipante">
+                        <div class="descricaoParticipante">
+                          <h3>Nome: Fulano de Tal</h3>
+                          <h3>Idade: 20 anos</h3>
+                        </div>
+                        <div class="social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section></section>
+                </div>
+            </div>
+          </div>
     </div>
-
-
-    <div class="conteudo-central2">
-      <div class="conteudo-card2">
-
-        <div class="cor"> </div>
-        <div class="contorno">
-        <div class="titulo-card2">
-          <h2 class="nome-card">Project Name</h2>
-          <h2 class="data-card">2025</h2>
+    
+    <footer>
+      <div id="container">
+        <div>
+          <img id="img-footer" src="../../assets/home/footer.png" alt="" />
         </div>
-          <p class="texto-card2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam temporibus molestiae
-            incidunt, doloribus minus dolores suscipit ipsa ab, in eveniet provident cupiditate perferendis repellendus
-            sunt labore quisquam. 
-          </p>
-        </div>
-      </div>
-      <div class="conteudo-card2">
 
-        <div class="cor"> </div>
-        <div class="contorno">
-        <div class="titulo-card2">
-          <h2 class="nome-card">Project Name</h2>
-          <h2 class="data-card">2025</h2>
+        <div id="desenfarm">
+          <h2 class="italico">Desenvolvido por</h2>
+          <h2 class="negrito">: FARMANDO XP</h2>
         </div>
-          <p class="texto-card2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam temporibus molestiae
-            incidunt, doloribus minus dolores suscipit ipsa ab, in eveniet provident cupiditate perferendis repellendus
-            sunt labore quisquam. 
-          </p>
+
+        <div>
+          <a id="a-footer" href="#">
+            <h2>Link da instituição</h2>
+          </a>
         </div>
       </div>
-
-    </div>
-  </div>
-  <footer>
-    <div id="container">
-      <div>
-        <img id="img-footer" src="../../assets/home/footer.png" alt="">
-      </div>
-
-      <div id="desenfarm">
-        <h2 class="italico">Desenvolvido por</h2>
-        <h2 class="negrito">: FARMANDO XP</h2>
-      </div>
-
-      <div>
-        <a id="a-footer" href="#">
-          <h2>Link da instituição</h2>
-        </a>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+    <script src="../scripts/card.js"></script>
+    <script src="https://kit.fontawesome.com/803e48205f.js" crossorigin="anonymous"></script>
+  </body>
 </html>

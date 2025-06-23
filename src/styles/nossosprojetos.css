@@ -2,11 +2,35 @@
 @import url('../components/navbar.css');
 @import url('../components/footer.css');
 
+:root{
+    --dark-primary: #212121;
+    --dark-secondary: #353434;
+    --dark-terciary: #454545;
+    --light-primary: #FEFAE0;
+    --primary-red: #F44336;
+    --primary-green: #4CAF50;
+}
+
 * {
 
     margin: 0px;
     padding: 0px;
 }
+
+::-webkit-scrollbar{
+        border-radius: 20px;
+        width: 0.8rem;
+}
+
+::-webkit-scrollbar-track{
+        background: var(--dark-secondary);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--dark-terciary);
+    border-radius: 20px;
+}
+
 
 body {
 
@@ -132,7 +156,7 @@ body {
     width: 500px;
      overflow: hidden;
     color: #FEFAE0;
-
+    cursor: pointer;
 }
 
 .titulo-card,
@@ -188,3 +212,174 @@ body {
 
 }
 
+/*Modais - Heitor*/
+
+#fundoCard{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 500ms;
+}
+#fundoCard.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modalCard{
+    display: flex;
+    flex-direction: column;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65rem;
+    height: 35rem;
+    max-width: 90%;
+    border-radius: 20px;
+    z-index: 5;
+    background-color: var(--dark-primary);
+    overflow-y: scroll;
+    transition: 500ms;
+}
+.modalCard.hide{
+    top: 125rem;
+    pointer-events: none;
+}
+
+.modalCard #fecharModal{
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modalCard .descricaoProjeto{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap: 2rem; /* Espaço entre foto e texto */
+    flex: 1;    
+    border-bottom: 1px solid var(--light-primary);
+    margin: 1rem 2rem;
+    padding: 3rem;
+}
+
+.modalCard .descricaoProjeto .textoModal{
+    flex: 1; /* Ocupa todo espaço restante */
+    min-width: 0; 
+}
+
+.modalCard .descricaoProjeto .fotoModal{
+    width: 15rem;
+    height: 15rem;
+}
+
+.modalCard .descricaoProjeto .fotoModal img{
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.modalCard .participantes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalCard .participantes .tituloParticipantes{
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    margin: 2rem;
+}
+
+.modalCard .participantes .togglerParticipantes{
+    display: flex;
+    margin: 1rem;
+}
+
+.modalCard .participantes .togglerParticipantes .toggler{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-secondary);
+    padding: 1rem 2rem;
+    height: 2rem;
+    width: 10rem;
+    cursor: pointer;
+    transition: 500ms background-color;
+}
+
+.modalCard .participantes .togglerParticipantes .toggler.t1{
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    color: var(--primary-red);
+}
+
+.modalCard .participantes .togglerParticipantes .toggler.t2{
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    color: var(--primary-green);
+}
+
+.modalCard .participantes .togglerParticipantes .toggler.t1.active{
+    background-color: var(--primary-red);
+    color: var(--dark-primary);
+    font-weight: 700;
+}
+
+.modalCard .participantes .togglerParticipantes .toggler.t2.active{
+    background-color: var(--primary-green);
+    color: var(--dark-primary);
+    font-weight: 700;
+}
+
+.participante{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    margin: 3rem;
+}
+.participante.active{
+    display: flex;
+}
+
+.participante .fotoParticipante{
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-terciary);
+    padding: 1rem;
+    height: 100%;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+}
+
+.participante .textoParticipante{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 30rem;
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--dark-secondary);
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+.participante .textoParticipante .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    i{
+        font-size: 2rem;
+        padding: 0.5rem;
+        margin: 0.2rem;
+        cursor: pointer;
+    }
+}

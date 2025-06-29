@@ -141,3 +141,97 @@ body{
 .div-perguntas:hover + .descricao-perguntas {
   display: block;
 }
+
+/* HIGOR */
+
+.Box-equipes{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    font-family: "Instrument Sans", sans-serif;
+}
+.Textos{
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+}
+.number {
+        font-size: 8rem;
+        font-weight: bold;
+        color: #3C096C;
+        position: relative;
+    }
+
+.number span1 {
+        width: 180px;
+        position: absolute;
+        top: 40%;
+        left: 20px;
+        font-size: 1.5rem;
+        color: #B5179E;
+    }
+.number span2 {
+        width: 480px;
+        position: absolute;
+        top: 60%;
+        left: 22px;
+        font-size: 2.0rem;
+        color: #FFFFFF;
+    }
+
+.Textos p {
+        font-size: 1.6rem;
+        color: #D9D9D9;
+        text-align: left;
+}
+.Logo{
+    width: 43%;
+    display: flex;
+    justify-content: end;
+}
+.imgLogo{
+    width: 45%;
+    
+}
+
+.Box-EquipesFotos{
+    display: flex;
+    flex-direction: column;
+    font-family: "Instrument Sans", sans-serif;
+}
+.Direcionador{
+    display: flex;
+    width: 80%;
+    margin: 80px auto;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    margin: 0px 60px;
+    border-radius: 22px;
+    height: 600px;
+    background-color: gray
+}
+.card p {
+    align-items: center;
+    font-size: 2.0rem;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.Texto-card{
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+.Texto-card p {
+ margin: 0px 35px;
+}
+.ImagemTime{
+    width: 95%;
+    border-radius: 22px;
+    height: 75%;
+    margin: 20px auto;
+    background-color: red;
+}

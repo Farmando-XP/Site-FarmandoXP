@@ -254,6 +254,10 @@
         color: var(--white);
     }
 
+     .main-text ul li {
+        margin-bottom: 1.2rem;
+     }
+
     .container-atividades {
         display: flex;
         flex-direction: column;
@@ -308,7 +312,7 @@
     .text p {
         font-size: 1.2rem;
         width: 526px;
-        height: 146px;
+        height: 90px;
         color: #D9D9D9;
         margin-top: -3rem;
     }

@@ -170,6 +170,7 @@ body {
     padding: 15px;
     color: #FEFAE0;
     align-items: center;
+    margin-top: 15px;
 
 }
 
@@ -187,7 +188,7 @@ body {
 }
 
 
-.cor {
+.img-projeto {
 
     background-color: #212121;
     width: 500px;

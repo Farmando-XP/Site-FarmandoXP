@@ -105,10 +105,10 @@ body{
 .div-perguntas{
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     text-align: center;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 80px;
     margin-right: 100px;
     font-family: Instrument Sans;
 }
@@ -132,11 +132,13 @@ body{
 .descricao-perguntas{
     display: none;
     color: #FEFAE0;
-    width: 500px;
-    margin-right: 100px;
-    font-size: 20px;
+    width: 700px;
+    margin-right: 50px;
     font-family: Instrument Sans;
-
+    font-weight: normal;
+}
+.p-perguntas{
+    font-size: 15px;
 }
 .div-perguntas:hover + .descricao-perguntas {
   display: block;

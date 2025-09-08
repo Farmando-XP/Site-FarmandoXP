@@ -18,12 +18,13 @@
 }
 
 ::-webkit-scrollbar{
-        border-radius: 20px;
-        width: 0.8rem;
+    border-radius: 20px;
+    width: 0.8rem;
 }
 
 ::-webkit-scrollbar-track{
-        background: var(--dark-secondary);
+    background: var(--dark-secondary);
+    border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -33,8 +34,6 @@
 
 
 body {
-
-
     background-color: #212121;
 }
 
@@ -236,7 +235,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 65rem;
-    height: 35rem;
+    height: 38rem;
     max-width: 90%;
     border-radius: 20px;
     z-index: 5;
@@ -254,6 +253,9 @@ body {
     padding: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
+    i{
+        padding: 0.5rem;
+    }
 }
 
 .modalCard .descricaoProjeto{
@@ -263,7 +265,7 @@ body {
     gap: 2rem; /* Espaço entre foto e texto */
     flex: 1;    
     border-bottom: 1px solid var(--light-primary);
-    margin: 1rem 2rem;
+    margin: 1rem 4rem 5rem 4rem;
     padding: 3rem;
 }
 

@@ -139,11 +139,11 @@
 /* Projetos - Heitor */
 
 #projetos {
-    padding: 3rem;
+    padding: 10rem 3rem 3rem 3rem;
     align-content: center;
     justify-items: center;
     color: var(--white);
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     box-sizing: border-box;
     font-family: "Instrument Sans", sans-serif;
 }
@@ -227,20 +227,52 @@
     justify-content: space-around;
 }
 
+#projetos .imgs figcaption{
+    width: 20rem;
+    text-align: justify;
+    h3{
+        margin: 1rem 0; 
+        font-weight: 700;
+        transition: 250ms;
+        cursor: default;
+        font-size: 1.3rem;
+    }
+    h3:hover{
+        text-decoration: underline;
+    }
+}
+
 #projetos .imgs .img {
     align-content: center;
     justify-items: center;
     padding: 1rem;
 }
 
+#projetos .imgs .img #pImg2 {
+    background-color: var(--purple-primary);
+}
+
 #projetos .imgs .img img {
+    border-radius: 1rem;
     width: 20rem;
     margin: 2rem 5rem;
+    transition: transform 250ms;
+}
+#projetos .imgs .img img:hover {
+    transform: scale(1.04);
 }
 
 
 #projetos .imgs .img#img2 {
-    transform: translateY(10rem);
+    transform: translateY(5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projetos .imgs .img#img2 img{
+    background-color: var(--purple-primary);
 }
 
 

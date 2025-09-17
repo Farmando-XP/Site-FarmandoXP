@@ -201,8 +201,9 @@ body{
     justify-content: end;
 }
 .imgLogo{
-    width: 45%;
-    
+    width: 400px;
+    height: 90%;
+    margin: auto 0px;
 }
 
 .Box-EquipesFotos{
@@ -219,10 +220,10 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 45%;
-    margin: 0px 60px;
+    width: 35%;
+    margin: 0px auto;
     border-radius: 22px;
-    height: 600px;
+    height: 400px;
     background-color: gray
 }
 .card p {
@@ -240,9 +241,9 @@ body{
  margin: 0px 35px;
 }
 .ImagemTime{
-    width: 95%;
+    width: 96%;
     border-radius: 22px;
-    height: 75%;
+    height: 100%;
     margin: 20px auto;
     background-color: red;
 }

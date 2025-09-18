@@ -3,18 +3,18 @@
 footer{
     font-family: Instrument Sans;
     background-color: #212529;
-    height: 488px;
+    height: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-#container{
+.div-footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 590px;
-    margin-top: 69px;
+    width: 300px;
+    margin-top: 20px;
 }
 
 #img-footer{
@@ -22,24 +22,31 @@ footer{
     width: 164px;
 }
 
-#desenfarm{
-    display: flex;
+.h2-footer{
+    color: #ffffff;
 }
 
-.italico{
-    color: #FEFAE0;
-    font-style: italic;
+p{
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
-.negrito{
-    color: #FEFAE0;
-    font-weight: bold;
-}
-
-#a-footer{
+.a-footer{
     font-size: 16px;
     font-style: italic;
-    color: #4361EE;
+    color: #ffffff;
     font-weight: normal;
+    text-decoration: none;
+    
+}
+
+.img-footer{
+    height: 30px;
+}
+
+.a-redes{
+    display: flex;
+    flex-direction: row;
     text-decoration: none;
 }

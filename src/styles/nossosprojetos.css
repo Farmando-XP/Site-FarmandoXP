@@ -150,7 +150,6 @@ body {
 .conteudo-card2 {
 
     border: 3px solid #454545;
-    
     border-radius: 20px;
     width: 500px;
      overflow: hidden;
@@ -385,4 +384,39 @@ body {
         margin: 0.2rem;
         cursor: pointer;
     }
+}
+
+
+@media(max-width:480px){
+
+.conteudo-central,
+.conteudo-central1,.conteudo-central2 {
+
+    flex-direction: column;
+    
+    
+}
+
+.conteudo-card,
+.conteudo-card1,
+.conteudo-card2{
+
+ width: 385px;
+
+}
+
+.linha{
+
+ width: 430px;
+
+
+}
+
+.imgProjetos{
+
+width: 400px;
+height:315px;
+
+}
+    
 }

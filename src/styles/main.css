@@ -297,7 +297,8 @@
         align-items: center;
         height: 100%;
         width: 100%;
-        margin-bottom: 20rem;
+        margin-bottom: 80px;
+        padding-bottom: 48px;
         box-sizing: border-box;
         font-family: "Instrument Sans", sans-serif;
     }
@@ -431,20 +432,18 @@
 
 #onde-estamos {
     .container {
-        width: 50%;
+        width: 59.5%;
         margin: auto;
         text-align: left;
         font-family: "Instrument Sans", sans-serif;
     }
 
     .main-text {
-        width: 40rem;
         font-size: 1.2rem;
         color: var(--white);
     }
 
     .section-header {
-        display: flex;
         align-items: flex-start;
         gap: 56px;
         margin-bottom: 24px;
@@ -458,17 +457,21 @@
     }
 
     .number span {
-        width: 180px;
+        width: 280px;
         position: absolute;
         top: 40%;
         left: 20px;
         font-size: 1.5rem;
         color: #4361EE
     }
-
-    .text-content {
-        width: 60%;
+    .number #texto-subtitulo {
+        width: 580px;
+        top: 65%;
+        font-size: 2rem;
+        color: white;
     }
+
+    
 
     .text-content h2 {
         margin: 0;
@@ -477,14 +480,16 @@
     }
 
     .text-content p {
-        margin-top: 12px;
+        margin-top: 20px;
         font-size: 1.2rem;
         color: #D9D9D9;
     }
-
+    ol{
+        margin-top: 20px;
+    }
     .maps {
         width: 100%;
-        height: 750px;
+        height: 650px;
         border-radius: 42px;
         margin: 0px 0px 150px 0px;
     }

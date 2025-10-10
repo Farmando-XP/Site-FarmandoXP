@@ -11,7 +11,7 @@
 <body class="conteudo-geral">
     <div>
         <header>
-            <div class="header">
+            <div class="lg header-pc">
                 <div class="logo_header">
                     <img src="assets/home/Logo_FarmandoXP 1.png" alt="logo FarmandoXP">
                     <h2 class="text_logo">FarmandoXP</h2>
@@ -22,7 +22,19 @@
                     <a href="#"><button class="button_header">Contato</button> </a>
                 </div>
             </div>
-
+            <div class="sm header-mobile">
+                <div class="logo_header">
+                    <img src="assets/home/Logo_FarmandoXP 1.png" alt="logo FarmandoXP">
+                </div>
+                <div class="menu">
+                    <button class="menu-toggle"><img class="drop-btn" src="assets/header/Menu.png" alt=""></button>
+                </div>
+            </div>
+            <nav class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="#">História</a>
+                <a href="#">Contato</a>
+            </nav>
         </header>
 
         <div class="conteudo_principal">
@@ -162,29 +174,32 @@
                         <div class="number">
                             03
                             <span>Onde estamos?</span>
+                            <span id="texto-subtitulo">Conheça a base do nosso projeto!</span>
                         </div>
                         <div class="text-content">
-                            <h2>Conheça a base do nosso projeto!</h2>
-                            <div class="main-text">
-                                <p>A base do Farmando XP está no entendimento de que sistemas informatizados impactam
+                            
+                             <p>A base do Farmando XP está no entendimento de que sistemas informatizados impactam
                                     diretamente nosso cotidiano. Por isso, o projeto se apoia em três pilares:</p>
-                                <br>
+                            <div class="main-text">
+                               
+                        
                                 <ol>
-                                    <li><b>Metodologia</b> – Aplicação de processos estruturados para o desenvolvimento
-                                        e manutenção de landing pages e páginas interativas.</li>
-                                    <li><b>Arquitetura da Informação</b> – Organização eficiente de conteúdos para
-                                        facilitar a navegação e o entendimento;</li>
-                                    <li><b>Experiência Prática</b> – Desenvolvimento de projetos reais para consolidar o
-                                        conhecimento teórico adquirido em sala de aula.</li>
+                                    <p>1 - <b>Metodologia</b> – Aplicação de processos estruturados para o desenvolvimento
+                                        e manutenção de landing pages e páginas interativas.</p>
+                                    <p>2 - <b>Arquitetura da Informação</b> – Organização eficiente de conteúdos para
+                                        facilitar a navegação e o entendimento;</p>
+                                    <p>3 -<b>Experiência Prática</b> – Desenvolvimento de projetos reais para consolidar o
+                                        conhecimento teórico adquirido em sala de aula.</p>
+                                    
                                 </ol>
-                                <br>
+                            
                                 <p>Nosso objetivo é proporcionar uma jornada de aprendizado que vá além da teoria,
                                     preparando os participantes para tomar decisões conscientes sobre sua carreira na
                                     área de desenvolvimento web. O foco do projeto é atender pequenos empresários e
                                     empresas da comunidade, prestando consultoria e auxilio na implementação de soluções
                                     digitais.
                                 </p>
-                                <br>
+                            
                                 <p>No futuro, prentende-se ampliar o foco do projeto, auxiliando também na construção de
                                     postagens e divulgação em redes sociais e marketing vertical.
                                 </p>
@@ -233,5 +248,6 @@
                 </div>
             </footer>
 </body>
+<script src="src/scripts/menu-button.js"></script>
 
 </html>

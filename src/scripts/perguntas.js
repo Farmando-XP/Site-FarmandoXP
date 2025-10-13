@@ -30,6 +30,7 @@ function carregarPerguntas(index) {
 
     boxTextos.style.opacity = 0;
 
+    
     //trocar texto com transicao suave
     setTimeout(() => {
 

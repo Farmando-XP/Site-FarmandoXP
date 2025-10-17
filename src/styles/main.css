@@ -356,10 +356,11 @@
      }
 
 
-    .image div {
+    .image {
         background-color: black;
         width: 469px;
         height: 375px;
+        object-fit: contain;
     }
 
     .cards {
@@ -383,7 +384,7 @@
         height: 400px;
         padding: 30px;
         border-radius: 10px;
-
+        object-fit: contain;
     }
 
     .card h4 {

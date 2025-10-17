@@ -356,11 +356,15 @@
      }
 
 
-    .image {
+    .image-container {
         background-color: black;
         width: 469px;
         height: 375px;
         object-fit: contain;
+    }
+    .image {
+        width: 469px;
+        height: 375px;
     }
 
     .cards {

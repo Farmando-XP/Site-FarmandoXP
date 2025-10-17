@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
-header{
+header {
     font-family: Instrument Sans;
 }
 
 @media (max-width: 900px) {
+
+    .link-indv-header {
+        cursor: pointer;
+    }
+
     .lg {
         display: none;
     }
@@ -23,11 +28,11 @@ header{
         align-items: center;
     }
 
-    .header-mobile{
+    .header-mobile {
         margin: 10px;
     }
 
-    a{
+    a {
         all: unset;
         color: white;
         width: auto;
@@ -51,11 +56,41 @@ header{
         background: linear-gradient(180deg, #212529 0%, #7209B7 2.13%, #7209B4 25%, #3A0689 63.46%, #03045E 100%);
     }
 
-    
+
 }
 
 /* Para telas grandes (largura acima de 900px) */
 @media (min-width: 901px) {
+
+    /*links de navegacao do menu*/
+    .text_home,
+    .text_historia,
+    .btn_contato {
+        font-family: Instrument Sans;
+        font-size: 20px;
+        color: #FEFAE0;
+        text-decoration: none;
+        margin-top: 15px;
+        transition: 0.5s;
+        height: 1.7rem;
+        width: 90px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .text_home:hover {
+        background-color: var(--purple-terciary);
+    }
+
+    .text_historia:hover {
+        background-color: var(--purple-terciary);
+    }
+
+    .btn_contato:hover {
+        background-color: var(--purple-terciary);
+    }
+
     .sm {
         display: none;
     }
@@ -68,6 +103,7 @@ header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding: 2rem 2rem 0 2rem;
     }
 
     .logo_header {

@@ -251,7 +251,9 @@ body{
     background-color: red;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+
+    
     .Box-equipes{
         flex-direction: column-reverse !important;
     }

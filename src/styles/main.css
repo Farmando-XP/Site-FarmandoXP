@@ -41,36 +41,6 @@
     align-items: center;
 }
 
-
-
-
-/*links de navegacao do menu*/
-.text_home, .text_historia,  .btn_contato {
-    font-family: Instrument Sans;
-    font-size: 20px;
-    color: #FEFAE0;
-    text-decoration: none;
-    margin-top: 15px;
-    transition: 0.5s;
-    height: 1.7rem;
-    width: 90px;
-    text-align: center;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.text_home:hover {
-    background-color: var(--purple-terciary);
-} 
-
-.text_historia:hover {
-    background-color: var(--purple-terciary);
-}
-
-.btn_contato:hover {
-   background-color: var(--purple-terciary);
-}
-
 .title_principal {
     font-family: Instrument Sans;
     font-size: 40px;
@@ -365,6 +335,7 @@
     .image {
         width: 469px;
         height: 375px;
+
     }
 
     .cards {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,44 @@
     <link rel="stylesheet" href="../components/navbar.css">
     <script src="../../src/scripts/perguntas.js" defer></script>
 </head>
+
 <body>
     <div id="fundoCard" class="hide"></div>
     <div class="conteudogeral">
-      <header>
-        <div class="header">
-          <div class="logo_header">
-            <img src="../../assets/home/Logo_FarmandoXP 1.png" alt="logo FarmandoXP" />
-            <h2 class="text_logo">FarmandoXP</h2>
-          </div>
-          <div class="links_header">
-            <a class="text_home" href="../../index.html">Home</a>
-            <a href="#" class="text_historia">História</a>
-            <a href="#"><button class="button_header">Contato</button> </a>
-          </div>
+        <header>
+            <div class="lg header-pc">
+                <div class="logo_header">
+                    <img src="../../assets/home/Logo_FarmandoXP 1.png" alt="logo FarmandoXP">
+                    <h2 class="text_logo">FarmandoXP</h2>
+                </div>
+                <div class="links_header">
+                    <a class="text_home" href="../../index.html">Home</a>
+                    <a href="#" class="text_historia">História</a>
+                    <a href="#" class="btn_contato">Contato</a>
+                </div>
+            </div>
+            <div class="sm header-mobile">
+                <div class="logo_header">
+                    <img src="../../assets/home/Logo_FarmandoXP 1.png" alt="logo FarmandoXP">
+                </div>
+                <div class="menu">
+                    <button class="menu-toggle"><img class="drop-btn" src="../../assets/header/Menu.png"
+                            alt=""></button>
+                </div>
+            </div>
+            <nav class="dropdown-content">
+                <a href="../../index.html">Home</a>
+                <a href="#">História</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+
+        <div class="div-conheca">
+            <h1 class="titulo-conheca">Conheça mais sobre nós!</h1>
+            <img class="img-conheca" src="../../assets/nossosprojetos/Logo_Title.png" alt="">
         </div>
-      </header>
 
-      <div class="div-conheca">
-          <h1 class="titulo-conheca">Conheça mais sobre nós!</h1>
-          <img class="img-conheca" src="../../assets/nossosprojetos/Logo_Title.png" alt="">
-      </div>
-
-      <div class="informacoes-sobrenos">
+        <div class="informacoes-sobrenos">
 
             <div class="perguntas">
                 <button class="pergunta ativo" id="0">
@@ -52,102 +68,111 @@
                     <img src="../../assets/nossosprojetos/Logo_Title.png" alt="">
                     Qual o nosso proposito?
                 </button>
-                
+
             </div>
 
             <div class="texto-perguntas">
                 <p id="textos">
-                    
+
                 </p>
             </div>
-          </div>
-      </div>
+        </div>
+    </div>
 
-      <div class="Box-equipes">
-            <div class="Textos">
-                <div class="number">
-                    01
-                    <span1>Onde estamos?</span1>
-                    <span2>Conheça nossa equipe!!!</span2>
-                </div>
-                <p>Conheça os itegrantes do projeto Farmando XP. O projeto já contou com a participação de dezenas de alunos ao longo de sua existência.
-<br><br>"Das terras prósperas do IFTM, um grupo de aventureiros decidiu aprimorar suas técnicas de desenvolvimento web, se aventurando em desafios que muitas vezes são difíceis, mas que trarão sua glória no futuro!"</p>
+    <div class="Box-equipes">
+        <div class="Textos">
+            <div class="number">
+                01
+                <span1>Onde estamos?</span1>
+                <span2>Conheça nossa equipe!!!</span2>
             </div>
-            <div class="Logo">
-                <img class="imgLogo" src="../../assets/home/footer.png" alt="">
+            <p>Conheça os itegrantes do projeto Farmando XP. O projeto já contou com a participação de dezenas de alunos
+                ao longo de sua existência.
+                <br><br>"Das terras prósperas do IFTM, um grupo de aventureiros decidiu aprimorar suas técnicas de
+                desenvolvimento web, se aventurando em desafios que muitas vezes são difíceis, mas que trarão sua glória
+                no futuro!"
+            </p>
+        </div>
+        <div class="Logo">
+            <img class="imgLogo" src="../../assets/home/footer.png" alt="">
+        </div>
+    </div>
+
+    <div class="Box-EquipesFotos">
+        <div class="Direcionador">
+            <div class="card">
+                <img class="ImagemTime" src="" alt="">
+                <div class="Texto-card">
+                    <p>2025</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img class="ImagemTime" src="" alt="">
+                <div class="Texto-card">
+                    <p>2024</p>
+                </div>
             </div>
         </div>
 
-        <div class="Box-EquipesFotos">
-            <div class="Direcionador">
-                <div class="card">
-                    <img class="ImagemTime" src="" alt="">
-                    <div class="Texto-card">
-                        <p>2025</p>
-                    </div>
+        <div class="Direcionador">
+            <div class="card">
+                <div class="card-imagem">
+                    <img class="ImagemTime" src="../../assets/sobre-nos/equipe2023.jpg" alt="">
                 </div>
-
-
-                <div class="card">
-                    <img class="ImagemTime" src="" alt="">
-                    <div class="Texto-card">
-                        <p>2024</p>
-                    </div>
+                <div class="Texto-card">
+                    <p>2023</p>
                 </div>
             </div>
 
-            <div class="Direcionador">
-                <div class="card">
-                    <div class="card-imagem">
-                        <img class="ImagemTime" src="../../assets/sobre-nos/equipe2023.jpg" alt="">
-                    </div>
-                    <div class="Texto-card">
-                        <p>2023</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="ImagemTime" src="" alt="">
-                    <div class="Texto-card">
-                        <p>2022</p>
-                    </div>
+            <div class="card">
+                <img class="ImagemTime" src="" alt="">
+                <div class="Texto-card">
+                    <p>2022</p>
                 </div>
             </div>
-
         </div>
-        <!-- Footer - Carlos -->
-            <footer>
-                <div class="div-footer">
-                    <h2 class="h2-footer">Sobre</h2>
-                    <a class="a-footer" href="../../src/pages/sobrenos.html">
-                        <p>O FarmandoXP é um projetode extensão que oferece aos estudantes de TINF a oportunidade de participar de projetos reais</p>
-                    </a>
-                </div>
-                <div class="div-footer">
-                    <h2 class="h2-footer">Saiba mais</h2>
-                    <a class="a-footer" href="../../src/pages/nossosprojetos.html">
-                        <p>Projetos desenvolvidos</p>
-                        <p>Formações do time</p>
-                        <p>Entre em contato</p>
-                    </a>
-                </div>
-                <div class="div-footer">
-                    <h2 class="h2-footer">IFTM - Campus Patrocínio</h2>
-                    <p>Av. Líria Terezinha Lassi Capuano, n° 255, Bairro Chácara das Rosa, Patrocínio-MG, CEP: 38747-792</p>
-                    </div>
-                <div class="div-footer">
-                    <h2 class="h2-footer">Redes Sociais</h2>
-                    <div>
-                        <a class="a-redes" class="a-footer" href="#"><img class="img-footer" src="../../assets/home/Instagram_logo_2022.svg.webp" alt="">
-                        <p>Instagram</p>
-                        </a>
-                    </div>
-                    <div class="div-footer">
-                        <a class="a-redes" class="a-footer" href="#"><img class="img-footer" src="../../assets/home/GitHub_Invertocat_Logo.svg.png" alt="">
-                        <p>GitHub</p>
-                        </a>
-                    </div>
-                </div>
-            </footer>
+
+    </div>
+    <!-- Footer - Carlos -->
+    <footer>
+        <div class="div-footer">
+            <h2 class="h2-footer">Sobre</h2>
+            <a class="a-footer" href="../../src/pages/sobrenos.html">
+                <p>O FarmandoXP é um projetode extensão que oferece aos estudantes de TINF a oportunidade de participar
+                    de projetos reais</p>
+            </a>
+        </div>
+        <div class="div-footer">
+            <h2 class="h2-footer">Saiba mais</h2>
+            <a class="a-footer" href="../../src/pages/nossosprojetos.html">
+                <p>Projetos desenvolvidos</p>
+                <p>Formações do time</p>
+                <p>Entre em contato</p>
+            </a>
+        </div>
+        <div class="div-footer">
+            <h2 class="h2-footer">IFTM - Campus Patrocínio</h2>
+            <p>Av. Líria Terezinha Lassi Capuano, n° 255, Bairro Chácara das Rosa, Patrocínio-MG, CEP: 38747-792</p>
+        </div>
+        <div class="div-footer">
+            <h2 class="h2-footer">Redes Sociais</h2>
+            <div>
+                <a class="a-redes" class="a-footer" href="#"><img class="img-footer"
+                        src="../../assets/home/Instagram_logo_2022.svg.webp" alt="">
+                    <p>Instagram</p>
+                </a>
+            </div>
+            <div class="div-footer">
+                <a class="a-redes" class="a-footer" href="#"><img class="img-footer"
+                        src="../../assets/home/GitHub_Invertocat_Logo.svg.png" alt="">
+                    <p>GitHub</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/menu-button.js"></script>
 </body>
+
 </html>

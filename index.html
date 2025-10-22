@@ -19,7 +19,7 @@
                 <div class="links_header">
                     <a class="text_home" href="#">Home</a>
                     <a href="#" class="text_historia">História</a>
-                    <a href="#"><button class="button_header">Contato</button> </a>
+                    <a href="#" class="btn_contato">Contato</a>
                 </div>
             </div>
             <div class="sm header-mobile">
@@ -31,9 +31,9 @@
                 </div>
             </div>
             <nav class="dropdown-content">
-                <a href="#">Home</a>
-                <a href="#">História</a>
-                <a href="#">Contato</a>
+                <a class="link-indv-header" href="#">Home</a>
+                <a class="link-indv-header" href="#">História</a>
+                <a class="link-indv-header" href="#">Contato</a>
             </nav>
         </header>
 
@@ -49,7 +49,7 @@
                     <a href="#"><button class="button_principal">Entre em Contato!</button> </a>
                 </div>
             </div>
-            <div>
+            <div class="logo-home">
                 <img src="assets/home/Logo_Preview.png" alt="Logo FarmandoXP">
             </div>
         </div>
@@ -59,6 +59,11 @@
                 <div class="text">
                     <div class="projetosMain">
                         <div class="main-title">
+                            <h1>01</h1>
+                            <h3>O que fazemos</h3>
+                            <h2>Projetos realizados pela equipe!</h2>
+                        </div>
+                        <div class="main-title-mobile">
                             <h1>01</h1>
                             <h3>O que fazemos</h3>
                             <h2>Projetos realizados pela equipe!</h2>
@@ -87,14 +92,17 @@
                         <img src="assets/home/logo-botanica-home.png" alt="Logo Projeto Botânica" id="pImg2">
                         <figcaption>
                             <h3>Projeto Botânica</h3>
-                            <p>O Botânica é um site que reúne e disponibiliza uma linha de cosméticos naturais, veganos e artesanais, produzidos de forma sustentável e responsável</p>
+                            <p>O Botânica é um site que reúne e disponibiliza uma linha de cosméticos naturais, veganos
+                                e artesanais, produzidos de forma sustentável e responsável</p>
                         </figcaption>
                     </figure>
                     <figure class="img" id="img2">
                         <img src="assets/home/logo-projeto-clinica.png" alt="" id="pImg3">
                         <figcaption>
                             <h3>Projeto Clínica Center Saúde</h3>
-                            <p>A Clínica Center Saúde é um site desenvolvido para apresentar e disponibilizar informações sobre os serviços de fisioterapia, osteopatia e pilates oferecidos em Patrocínio (MG).</p>
+                            <p>A Clínica Center Saúde é um site desenvolvido para apresentar e disponibilizar
+                                informações sobre os serviços de fisioterapia, osteopatia e pilates oferecidos em
+                                Patrocínio (MG).</p>
                         </figcaption>
                     </figure>
                 </div>
@@ -109,6 +117,13 @@
                                 <h3>O que mais?</h3>
                                 <h2>Outras atividades da equipe!</h2>
                             </div>
+
+                            <div class="titles-activity-mobile">
+                                <h1>02</h1>
+                                <h3>O que mais?</h3>
+                                <h2>Outras atividades da equipe!</h2>
+                            </div>
+
                             <div class="main-text">
                                 <p>Além dos projetos práticos, o grupo realiza atividades complementares, como:</p>
                                 <ul>
@@ -122,45 +137,50 @@
                                 <a href="./src/pages/sobrenos.html" target="_blank">Sobre Nós</a>
                             </button>
                         </div>
-                        <div class="image">
-                            <div>
-                            </div>
+                        <div class="image-container">
+                            <img class="image" src="assets/home/foto_des_projetos.jpg" alt="">
                         </div>
                     </div>
                     <div class="cards">
                         <div class="card">
-                            <h4>Atividade</h4>
-                            <img src="" alt="">
+                            <svg class="icon-card" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"/>
+                            </svg>
                             <div class="title-and-text">
-                                <h3>Atividade</h3>
+                                <h3>Desenvolvimento de Projetos</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut
-                                    commodo
-                                    sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.
+                                    Criação de sites e landing pages para pequenos negócios locais, aplicando
+                                    conhecimentos de design, usabilidade e programação web.
                                 </p>
                             </div>
                         </div>
                         <div class="card">
-                            <h4>Atividade</h4>
-                            <img src="" alt="">
+                            <svg class="icon-card" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/>
+                            </svg>
                             <div class="title-and-text">
-                                <h3>Atividade</h3>
+                                <h3>Encontros e Palestras com Profissionais da Área</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut
-                                    commodo
-                                    sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.
+                                    Conversas com desenvolvedores e especialistas em tecnologia sobre carreira, mercado
+                                    de trabalho e tendências da área.
                                 </p>
                             </div>
                         </div>
                         <div class="card">
-                            <h4>Atividade</h4>
-                            <img src="" alt="">
+                            <svg class="icon-card" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/>
+                            </svg>
                             <div class="title-and-text">
-                                <h3>Atividade</h3>
+                                <h3>Estudos e Capacitação em Desenvolvimento Web e UI</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut
-                                    commodo
-                                    sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.
+                                    Aprendizado contínuo em tecnologias front-end, boas práticas de código e design de
+                                    interfaces.
                                 </p>
                             </div>
                         </div>
@@ -177,29 +197,31 @@
                             <span id="texto-subtitulo">Conheça a base do nosso projeto!</span>
                         </div>
                         <div class="text-content">
-                            
-                             <p>A base do Farmando XP está no entendimento de que sistemas informatizados impactam
-                                    diretamente nosso cotidiano. Por isso, o projeto se apoia em três pilares:</p>
+
+                            <p>A base do Farmando XP está no entendimento de que sistemas informatizados impactam
+                                diretamente nosso cotidiano. Por isso, o projeto se apoia em três pilares:</p>
                             <div class="main-text">
-                               
-                        
+
+
                                 <ol>
-                                    <p>1 - <b>Metodologia</b> – Aplicação de processos estruturados para o desenvolvimento
+                                    <p>1 - <b>Metodologia</b> – Aplicação de processos estruturados para o
+                                        desenvolvimento
                                         e manutenção de landing pages e páginas interativas.</p>
                                     <p>2 - <b>Arquitetura da Informação</b> – Organização eficiente de conteúdos para
                                         facilitar a navegação e o entendimento;</p>
-                                    <p>3 -<b>Experiência Prática</b> – Desenvolvimento de projetos reais para consolidar o
+                                    <p>3 -<b>Experiência Prática</b> – Desenvolvimento de projetos reais para consolidar
+                                        o
                                         conhecimento teórico adquirido em sala de aula.</p>
-                                    
+
                                 </ol>
-                            
+
                                 <p>Nosso objetivo é proporcionar uma jornada de aprendizado que vá além da teoria,
                                     preparando os participantes para tomar decisões conscientes sobre sua carreira na
                                     área de desenvolvimento web. O foco do projeto é atender pequenos empresários e
                                     empresas da comunidade, prestando consultoria e auxilio na implementação de soluções
                                     digitais.
                                 </p>
-                            
+
                                 <p>No futuro, prentende-se ampliar o foco do projeto, auxiliando também na construção de
                                     postagens e divulgação em redes sociais e marketing vertical.
                                 </p>
@@ -218,7 +240,8 @@
                 <div class="div-footer">
                     <h2 class="h2-footer">Sobre</h2>
                     <a class="a-footer" href="src/pages/sobrenos.html">
-                        <p>O FarmandoXP é um projetode extensão que oferece aos estudantes de TINF a oportunidade de participar de projetos reais</p>
+                        <p>O FarmandoXP é um projetode extensão que oferece aos estudantes de TINF a oportunidade de
+                            participar de projetos reais</p>
                     </a>
                 </div>
                 <div class="div-footer">
@@ -231,23 +254,26 @@
                 </div>
                 <div class="div-footer">
                     <h2 class="h2-footer">IFTM - Campus Patrocínio</h2>
-                    <p>Av. Líria Terezinha Lassi Capuano, n° 255, Bairro Chácara das Rosa, Patrocínio-MG, CEP: 38747-792</p>
-                    </div>
+                    <p>Av. Líria Terezinha Lassi Capuano, n° 255, Bairro Chácara das Rosa, Patrocínio-MG, CEP: 38747-792
+                    </p>
+                </div>
                 <div class="div-footer">
                     <h2 class="h2-footer">Redes Sociais</h2>
                     <div>
-                        <a class="a-redes" class="a-footer" href="#"><img class="img-footer" src="assets/home/Instagram_logo_2022.svg.webp" alt="">
-                        <p>Instagram</p>
+                        <a class="a-redes" class="a-footer" href="#"><img class="img-footer"
+                                src="assets/home/Instagram_logo_2022.svg.webp" alt="">
+                            <p>Instagram</p>
                         </a>
                     </div>
                     <div class="div-footer">
-                        <a class="a-redes" class="a-footer" href="#"><img class="img-footer" src="assets/home/GitHub_Invertocat_Logo.svg.png" alt="">
-                        <p>GitHub</p>
+                        <a class="a-redes" class="a-footer" href="#"><img class="img-footer"
+                                src="assets/home/GitHub_Invertocat_Logo.svg.png" alt="">
+                            <p>GitHub</p>
                         </a>
                     </div>
                 </div>
             </footer>
+            <script src="src/scripts/menu-button.js"></script>
 </body>
-<script src="src/scripts/menu-button.js"></script>
 
 </html>

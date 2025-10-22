@@ -9,6 +9,7 @@
     --light-primary: #FEFAE0;
     --primary-red: #F44336;
     --primary-green: #4CAF50;
+    --purple-terciary: #7209B7;
 }
 
 * {
@@ -37,29 +38,6 @@ body {
     background-color: #212121;
 }
 
-.header {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-   
-
-}
-
-.logo_header {
-
-    display: flex;
-    justify-content: left;
-
-}
-
-.links_header {
-
-    display: flex;
-    gap: 20px;
-
-}
 
 .text_logo {
 
@@ -68,41 +46,6 @@ body {
     display: flex;
     align-items: center;
 
-
-}
-
-.text_home {
-    font-family: Instrument Sans;
-    font-size: 20px;
-    color: #FEFAE0;
-    text-decoration: none;
-    margin: 12px;
-    margin-top: 18px;
-
-}
-
-.text_historia {
-    font-family: Instrument Sans;
-    font-size: 20px;
-    color: #FEFAE0;
-    text-decoration: none;
-    margin: 12px;
-    margin-top: 18px;
-
-}
-
-.button_header {
-
-    color: #FEFAE0;
-    background-color: #7209B7CC;
-    font-family: Instrument Sans;
-    font-size: 20px;
-    border: #7209B7CC;
-    border-radius: 10px;
-    width: 150px;
-    margin: 10px;
-    height: 41.44px;
-    cursor: pointer;
 
 }
 
@@ -388,6 +331,7 @@ body {
 
 
 @media(max-width:480px){
+    
 
 .conteudo-central,
 .conteudo-central1,.conteudo-central2 {

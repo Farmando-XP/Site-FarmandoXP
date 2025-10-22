@@ -6,8 +6,13 @@ header {
 
 @media (max-width: 900px) {
 
+    header, body, html{
+        width: 100%;
+    }
+
     .link-indv-header {
         cursor: pointer;
+        width: 70%;
     }
 
     .lg {
@@ -42,6 +47,7 @@ header {
         all: unset;
         cursor: pointer;
     }
+    
 
     .dropdown-content {
         background-color: rgb(33, 37, 41);
@@ -50,7 +56,8 @@ header {
         padding: 40px;
         gap: 20px;
         position: absolute;
-        width: 100%;
+        left: 0;
+        right: 0;
         height: auto;
         border-bottom: 3px solid #4b005e;
         background: linear-gradient(180deg, #212529 0%, #7209B7 2.13%, #7209B4 25%, #3A0689 63.46%, #03045E 100%);

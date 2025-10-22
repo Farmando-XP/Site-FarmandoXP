@@ -539,7 +539,7 @@
 #projetos .imgs .img img {
     border-radius: 1rem;
     width: 20rem;
-    margin: 1rem 2.5rem;
+    margin: 0;
     transition: transform 250ms;
 }
 
@@ -588,8 +588,13 @@
         display: none;
     }
 
+    div .btn {
+        display: flex;
+        justify-content: center;
+    }
+
     #projetos .text .btn #vejaMais {
-        margin: 1.5rem 5.5rem;
+        margin: 1.5rem 0;
         width: 12rem;
     }
 

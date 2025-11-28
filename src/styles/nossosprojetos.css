@@ -345,7 +345,10 @@ body {
 .conteudo-card1,
 .conteudo-card2{
 
- width: 385px;
+ width: 350px;
+ 
+
+ margin: auto;
 
 }
 
@@ -358,7 +361,7 @@ body {
 
 .imgProjetos{
 
-width: 400px;
+width: 370px;
 height:315px;
 
 }

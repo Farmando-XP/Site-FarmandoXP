@@ -396,6 +396,11 @@
 /* Onde estamos - Higor */
 
 #onde-estamos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
     .container {
         width: 59.5%;
         margin: auto;
@@ -456,10 +461,11 @@
     }
 
     .maps {
-        width: 100%;
+        width: 60%;
         height: 650px;
         border-radius: 42px;
         margin: 0px 0px 150px 0px;
+        align-self: center;
     }
 }
 
@@ -747,6 +753,17 @@
         top: 65%;
         font-size: 1.8rem;  /* Changed from 10px for better readability */
         color: white;
+    }
+
+    #onde-estamos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #onde-estamos .maps{
+        width: 70vw;
+        height: 50vh;
     }
 
     .number{

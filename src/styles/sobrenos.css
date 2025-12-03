@@ -241,13 +241,14 @@ body{
  margin: 0px 35px;
 }
 .card-imagem{
-    object-fit: cover;
+    width: 100%;
+    display: flex;
 }
 .ImagemTime{
     width: 96%;
     border-radius: 22px;
     height: 100%;
-    margin: 20px auto;
+    margin: 0px auto;
     background-color: red;
 }
 
@@ -322,16 +323,21 @@ body{
         gap: 2rem;
     }
 
-    .card {
-        width: 80%;
-        height: 200px;
-        padding-bottom: 5px;
+    .Texto-card p {
+        margin: 10px 35px 0px 35px
     }
+    .card {
+        width: 75%;
+        height: 200px;
 
-    .ImagemTime {
+    }
+    .card-imagem{  
         width: 90%;
-        padding: 0px;
-        margin: 10px auto 4px;
+        height: 75%;
+        margin: 0px auto;
+    }
+    .ImagemTime {
+        height: 100%;
     }
 
 }

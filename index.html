@@ -23,7 +23,7 @@
                 <img src="IMG/FXP - Logo.png" alt="Logo Farmando XP">
             </a>
 
-            <a href="equipe.html">Nossa Equipe</a>
+            <a href="equipe.html">Equipe</a>
         </nav>
 
         <div class="hero-content">
@@ -54,8 +54,8 @@
                 </div>
 
                 <div class="image-bg-circle">
-                    <img src="IMG/Mulher apontando para cima com notebook.png"
-                        alt="Mulher apontando para cima com notebook" class="hero-person">
+                    <img src="IMG/Gilberto.png"
+                        alt="Professor Gilberto Oliveira" class="hero-person">
                 </div>
 
             </div>
@@ -83,11 +83,7 @@
 
             <div class="about-right">
                 <div class="about-description">
-                    <p style="margin-bottom: 15px; text-align: justify;">Farmando XP é um projeto de extensão do Professor Gilberto Oliveira do IFTM, campus Patrocínio, onde orienta alunos do curso técnico
-                        em Informática que estudam e desenvolvem soluções para a web. A proposta é colocar em prática os
-                        conhecimentos adquiridos em sala, criando sites, sistemas e aplicações digitais. Além disso, o
-                        projeto incentiva o trabalho em equipe, a criatividade e o uso de novas tecnologias, preparando
-                        os alunos para os desafios do mercado de tecnologia.</p>
+                    <p style="margin-bottom: 15px; text-align: justify;">Farmando XP é um projeto de extensão do Professor Gilberto Oliveira do IFTM, campus Patrocínio, onde orienta alunos do curso técnico em Informática que estudam e desenvolvem soluções para a web. A proposta é colocar em prática os conhecimentos adquiridos em sala, criando sites, sistemas e aplicações digitais. Além disso, o projeto incentiva o trabalho em equipe, a criatividade e o uso de novas tecnologias, preparando os alunos para os desafios do mercado de tecnologia.</p>
                 </div>
             </div>
         </div>
@@ -177,22 +173,22 @@
                 <div class="lista-botoes">
 
                     <button class="btn-servico"
-                        data-descricao="Criamos sites completos e funcionais para empresas, projetos e profissionais, sempre pensando em uma experiência simples e eficiente para o usuário.">
+                        data-descricao="Desenvolvimento Web é a criação de sites e sistemas que funcionam pela internet, transformando ideias em páginas funcionais, acessíveis e fáceis de usar.">
                         Desenvolvimento Web
                     </button>
 
                     <button class="btn-servico"
-                        data-descricao="Criamos páginas focadas em apresentar um produto, serviço ou projeto de forma direta, atrativa e pensada para gerar resultados.">
+                        data-descricao="Landing Page é uma página criada para apresentar um produto, serviço ou campanha e incentivar o visitante a realizar uma ação específica.">
                         Landing Page
                     </button>
 
                     <button class="btn-servico"
-                        data-descricao="Criamos interfaces modernas e intuitivas, organizando os elementos de forma que o usuário consiga navegar pelo site com facilidade.">
+                        data-descricao="Design de Interfaces é a criação da parte visual de sites e sistemas, organizando cores, textos e elementos para facilitar a interação do usuário.">
                         Design de Interfaces
                     </button>
 
                     <button class="btn-servico"
-                        data-descricao="Adaptamos o site para diferentes tamanhos de tela, garantindo uma boa experiência tanto em computadores quanto em celulares e tablets.">
+                        data-descricao="Design Responsivo permite que sites e sistemas se adaptem a diferentes telas, funcionando corretamente em celulares, tablets e computadores.">
                         Design Responsivo
                     </button>
 
@@ -200,9 +196,47 @@
             </div>
 
             <div class="coluna-central">
-                <div class="imagem-wrapper">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600"
-                        alt="Profissional trabalhando no notebook">
+                <div class="projetos-carrossel" aria-roledescription="carrossel" aria-label="Nossos projetos">
+                    <h2 class="projetos-titulo">Nossos projetos</h2>
+
+                    <div class="carrossel-slides">
+                        <a class="carrossel-slide ativo" href="https://farmando-xp.github.io/botanica/"
+                            aria-label="Conheça o projeto Botânica">
+                            <img class="logo-projeto" src="IMG/Projetos/Botanica - Logo.png"
+                                alt="Logo do projeto Botânica">
+                        </a>
+                        <a class="carrossel-slide" href="https://farmando-xp.github.io/geoespinhaco/"
+                            aria-label="Conheça o projeto Geo Espinhaço">
+                            <img class="logo-projeto" src="IMG/Projetos/Geoespinhaco - Logo.png"
+                                alt="Logo do projeto Geo Espinhaço">
+                        </a>
+                        <a class="carrossel-slide" href="https://farmando-xp.github.io/tiagorodrigues/"
+                            aria-label="Conheça o projeto Clínica Odonto">
+                            <img class="logo-projeto" src="IMG/Projetos/Clinica - Logo.png"
+                                alt="Logo da Clínica Odonto">
+                        </a>
+                        <a class="carrossel-slide" href="https://farmando-xp.github.io/Floresta/"
+                            aria-label="Conheça o projeto Supermercado Floresta">
+                            <img class="logo-projeto" src="IMG/Projetos/Floresta - Logo.png"
+                                alt="Logo do projeto Supermercado Floresta">
+                        </a>
+                    </div>
+
+                    <button class="carrossel-controle anterior" type="button"
+                        aria-label="Projeto anterior">&#10094;</button>
+                    <button class="carrossel-controle proximo" type="button"
+                        aria-label="Próximo projeto">&#10095;</button>
+
+                    <div class="carrossel-indicadores" role="tablist" aria-label="Selecione um projeto">
+                        <button class="indicador ativo" type="button" role="tab" aria-selected="true"
+                            aria-label="Mostrar Botânica"></button>
+                        <button class="indicador" type="button" role="tab" aria-selected="false"
+                            aria-label="Mostrar Geo Espinhaço"></button>
+                        <button class="indicador" type="button" role="tab" aria-selected="false"
+                            aria-label="Mostrar Clínica Odonto"></button>
+                        <button class="indicador" type="button" role="tab" aria-selected="false"
+                            aria-label="Mostrar Supermercado Floresta"></button>
+                    </div>
                 </div>
             </div>
 
@@ -236,6 +270,40 @@
 
         </div>
     </section>
+
+    <section class="jogos-section" id="jogos">
+        <div class="jogos-card">
+            <div class="jogos-decoracao jogos-decoracao-esquerda" aria-hidden="true">
+                <span></span><span></span><span></span>
+            </div>
+
+            <div class="jogos-conteudo">
+                <p class="jogos-fase">NOVO DESAFIO DESBLOQUEADO</p>
+                <h2>Agora também<br><span>criamos jogos!</span></h2>
+                <p>
+                    Em 2026, a equipe Farmando XP decidiu expandir a jornada: além de criar soluções para a web,
+                    começamos a estudar desenvolvimento de jogos. Estamos aprendendo a transformar ideias, desafios e
+                    criatividade em experiências divertidas para jogar.
+                </p>
+                <a class="btn-jogos" href="jogos.html">JOGUE NOSSOS JOGOS <span aria-hidden="true">▶</span></a>
+            </div>
+
+            <div class="jogos-arcade" aria-hidden="true">
+                <div class="arcade-tela">
+                    <span class="pixel pixel-1"></span>
+                    <span class="pixel pixel-2"></span>
+                    <span class="pixel pixel-3"></span>
+                    <strong>PLAY</strong>
+                </div>
+                <div class="arcade-controles">
+                    <span class="direcional">✚</span>
+                    <span class="botao-arcade"></span>
+                    <span class="botao-arcade"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer-section">
         <div class="footer-container">
 
@@ -252,8 +320,9 @@
 
                     <ul>
                         <li><a href="https://farmando-xp.github.io/botanica/">Botanica</a></li>
-                        <li><a href="https://farmando-xp.github.io/geoespinhaco/">Geoespinhaco</a></li>
                         <li><a href="https://farmando-xp.github.io/tiagorodrigues/">Clinica Odonto</a></li>
+                        <li><a href="https://farmando-xp.github.io/geoespinhaco/">Geoespinhaco</a></li>
+                        <li><a href="https://farmando-xp.github.io/Floresta/">Supermercado Floresta</a></li>
                     </ul>
                 </div>
 
@@ -309,7 +378,8 @@
         </div>
 
         <div class="footer-copyright">
-            <p>Site desenvolvido pela equipe de 2026. Projeto sob orientação do Professor <a style="color: #ffffff; text-decoration: none; font-family: inherit;" href="https://github.com/gvoliveira">Gilberto Oliveira</a> </p>
+            <p>Site desenvolvido pela equipe de <a href="equipe.html#equipe2026">2026</a>. Projeto sob orientação do
+                Professor <a href="https://github.com/gvoliveira">Gilberto Oliveira</a></p>
         </div>
     </footer>
     <button id="btn-topo" aria-label="Voltar ao topo">

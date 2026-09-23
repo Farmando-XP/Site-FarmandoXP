@@ -535,8 +535,13 @@ body {
 
     .foto-equipe {
         width: 100%;
-        height: 230px;
+        height: auto;
         border-radius: 18px;
+    }
+
+    .foto-equipe img {
+        height: auto;
+        object-fit: contain;
     }
 
 
@@ -597,3 +602,4 @@ body {
     }
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');

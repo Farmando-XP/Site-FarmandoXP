@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -147,7 +149,7 @@ body {
     background-color: #000;
     width: 380px;
     height: 380px;
-    border-radius: 50%;
+    border-radius: 100%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -157,8 +159,9 @@ body {
 .hero-person {
     height: 115%;
     position: absolute;
-    bottom: 0;
+    bottom: 0.1;
     z-index: 2;
+    border-radius: 135%
 }
 
 /* =========================================================
@@ -511,7 +514,7 @@ body {
 .titulo-servicos {
     font-family: 'Impact', 'Arial Black', sans-serif;
     font-size: 3.2rem;
-    color: #c4c4c4;
+    color: #ffffff;
     letter-spacing: 2px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -577,22 +580,127 @@ body {
 
 
 /* =========================================================
-   SERVIÇOS - IMAGEM
+   NOSSOS PROJETOS - CARROSSEL
 ========================================================= */
 
-.imagem-wrapper {
+.projetos-carrossel {
     width: 100%;
-    height: 520px;
+    aspect-ratio: 1 / 1;
+    height: auto;
     border-radius: 45px;
     overflow: hidden;
-    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.05);
+    box-shadow: none;
+    position: relative;
+    background-color: transparent;
 }
 
-.imagem-wrapper img {
+.carrossel-slides,
+.carrossel-slide {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+}
+
+.carrossel-slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.45s ease;
+    text-decoration: none;
+}
+
+.carrossel-slide.ativo {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.projetos-titulo,
+.carrossel-controle,
+.carrossel-indicadores {
+    position: absolute;
+    z-index: 2;
+}
+
+.projetos-titulo {
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 2.35rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.logo-projeto {
+    display: block;
+    width: min(78%, 330px);
+    max-height: 58%;
+    object-fit: contain;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.carrossel-slide:hover .logo-projeto,
+.carrossel-slide:focus-visible .logo-projeto {
+    transform: translateY(-14px) scale(1.04);
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.4));
+}
+
+.carrossel-controle {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border: 0;
+    border-radius: 50%;
+    background: #151515;
+    color: #ffffff;
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.carrossel-controle:hover,
+.carrossel-controle:focus-visible {
+    background-color: #00b050;
+    transform: translateY(-50%) scale(1.08);
+}
+
+.anterior {
+    left: 16px;
+}
+
+.proximo {
+    right: 16px;
+}
+
+.carrossel-indicadores {
+    display: flex;
+    gap: 8px;
+    bottom: 18px;
+    right: 20px;
+}
+
+.indicador {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 1px solid #151515;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.indicador.ativo {
+    background-color: #00b050;
 }
 
 
@@ -691,6 +799,187 @@ body {
 .btn-circular svg {
     width: 24px;
     height: 24px;
+}
+
+/* =========================================================
+   JOGOS - SEÇÃO RETRÔ
+========================================================= */
+
+.jogos-section {
+    width: 100%;
+    padding: 10px 20px 60px;
+}
+
+.jogos-card {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 420px;
+    margin: 0 auto;
+    padding: 55px 70px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #111;
+    background-image: linear-gradient(rgba(0, 176, 80, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 176, 80, 0.1) 1px, transparent 1px);
+    background-size: 22px 22px;
+    border: 4px solid #00b050;
+    box-shadow: 10px 10px 0 #ff0000;
+}
+
+.jogos-conteudo {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+}
+
+.jogos-fase {
+    margin-bottom: 16px;
+    color: #00b050;
+    font-size: .85rem;
+    letter-spacing: 2px;
+}
+
+.jogos-conteudo h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4.3rem);
+    line-height: .9;
+    text-transform: uppercase;
+}
+
+.jogos-conteudo h2 span {
+    color: #ff0000;
+}
+
+.jogos-conteudo>p:not(.jogos-fase) {
+    max-width: 620px;
+    color: #e6e6e6;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+.btn-jogos {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+    padding: 15px 22px;
+    background: #00b050;
+    box-shadow: 5px 5px 0 #fff;
+    color: #000;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.btn-jogos:hover,
+.btn-jogos:focus-visible {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 #fff;
+}
+
+.jogos-arcade {
+    width: 210px;
+    padding: 14px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    background: #00b050;
+    border: 5px solid #000;
+    box-shadow: 7px 7px 0 #ff0000;
+    transform: rotate(4deg);
+}
+
+.arcade-tela {
+    height: 140px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    overflow: hidden;
+    background: #000;
+    border: 5px solid #004820;
+    color: #00b050;
+    font-family: 'Impact', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.pixel {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #ff0000;
+}
+
+.pixel-1 {
+    top: 25px;
+    left: 28px;
+}
+
+.pixel-2 {
+    top: 52px;
+    right: 34px;
+    background: #00b050;
+}
+
+.pixel-3 {
+    top: 20px;
+    right: 70px;
+    width: 9px;
+    height: 9px;
+    background: #fff;
+}
+
+.arcade-controles {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    color: #000;
+}
+
+.direcional {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.botao-arcade {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff0000;
+    border: 2px solid #000;
+}
+
+.botao-arcade+.botao-arcade {
+    margin-left: -42px;
+}
+
+.jogos-decoracao {
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    transform: rotate(-20deg);
+}
+
+.jogos-decoracao span {
+    width: 42px;
+    height: 8px;
+    background: #ff0000;
+}
+
+.jogos-decoracao-esquerda {
+    bottom: 30px;
+    left: -10px;
 }
 
 /* =========================================================
@@ -1017,10 +1306,19 @@ body {
        SERVIÇOS - IMAGEM
     ===================================================== */
 
-    .imagem-wrapper {
+    .projetos-carrossel {
         width: 100%;
-        height: 350px;
         border-radius: 30px;
+    }
+
+    .projetos-titulo {
+        top: 22px;
+        font-size: 1.9rem;
+    }
+
+    .logo-projeto {
+        width: min(74%, 260px);
+        max-height: 55%;
     }
 
 
@@ -1062,6 +1360,47 @@ body {
     .btn-circular svg {
         width: 20px;
         height: 20px;
+    }
+
+    .jogos-section {
+        padding: 0 15px 40px;
+    }
+
+    .jogos-card {
+        min-height: auto;
+        padding: 42px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+        box-shadow: 6px 6px 0 #ff0000;
+    }
+
+    .jogos-fase {
+        font-size: .68rem;
+        letter-spacing: 1.3px;
+    }
+
+    .jogos-conteudo h2 {
+        font-size: 2.55rem;
+    }
+
+    .jogos-conteudo>p:not(.jogos-fase) {
+        font-size: .92rem;
+    }
+
+    .btn-jogos {
+        font-size: .82rem;
+        padding: 13px 16px;
+    }
+
+    .jogos-arcade {
+        width: 175px;
+        align-self: center;
+    }
+
+    .arcade-tela {
+        height: 115px;
+        font-size: 1.6rem;
     }
 
 }

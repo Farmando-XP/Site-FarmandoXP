@@ -166,7 +166,6 @@ body {
 
 /* =========================================================
    HERO - DECORAÇÕES
-========================================================= */
 
 .decorations {
     position: absolute;
@@ -205,6 +204,10 @@ body {
 
 .line-3 {
     width: 70px;
+
+.hero-person {
+    height: 35rem;
+    object-fit: cover;
 }
 
 

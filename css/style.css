@@ -1,0 +1,1342 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', 'Arial', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 0;
+}
+
+
+/* =========================================================
+   HERO - CONTAINER
+========================================================= */
+
+.hero-container {
+    background-color: #c2c2c2;
+    width: 100%;
+    max-width: 1200px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+/* =========================================================
+   HERO - CONTEÚDO
+========================================================= */
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 550px;
+}
+
+.tagline {
+    font-size: 0.95rem;
+    color: #000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    color: #111;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.main-title span {
+    color: #ff0000;
+}
+
+.description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: #222;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   HERO - BOTÕES
+========================================================= */
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 15px 35px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-green {
+    background-color: #00b060;
+    color: #fff;
+    box-shadow: 0 8px 0px #000;
+    border: 3px solid #000;
+}
+
+.btn-red {
+    background-color: #ff0000;
+    color: #fff;
+    box-shadow: 0 8px 0px #000;
+    border: 3px solid #000;
+}
+
+.btn:hover {
+    transform: translateY(3px);
+    box-shadow: 0 5px 0px #000;
+}
+
+.btn:active {
+    transform: translateY(8px);
+    box-shadow: 0 0px 0px #000;
+}
+
+
+/* =========================================================
+   HERO - IMAGEM
+========================================================= */
+
+
+.hero-person {
+    height: 35rem;
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   FEATURES - TÍTULO / DIVISOR
+========================================================= */
+
+.features-section {
+    width: 100%;
+    padding: 0;
+    margin-bottom: -1.95rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -40px;
+    z-index: 1;
+}
+
+.features-text {
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.features-divider {
+    width: 100%;
+    max-width: 1200px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+}
+
+
+/* =========================================================
+   SOBRE NÓS - SEÇÃO
+========================================================= */
+
+.about-section {
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* =========================================================
+   SOBRE NÓS - CARD
+========================================================= */
+
+.about-card {
+    background-color: #141414;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 40px;
+    padding: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+/* =========================================================
+   SOBRE NÓS - LADO ESQUERDO
+========================================================= */
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 50%;
+    margin-bottom: 15px;
+}
+
+.about-title {
+    color: #ffffff;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+
+.code-box-container {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+}
+
+.code-image {
+    width: 100%;
+    border-radius: 25px;
+    display: block;
+    object-fit: cover;
+    height: 220px;
+    filter: brightness(0.8);
+}
+
+.btn-team {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00b060;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    white-space: nowrap;
+    border: 2px solid #000;
+    box-shadow: 0 5px 0px #000;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-team:hover {
+    transform: translateX(-50%) translateY(2px);
+    box-shadow: 0 3px 0px #000;
+}
+
+
+/* =========================================================
+   SOBRE NÓS - LADO DIREITO
+========================================================= */
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 50%;
+}
+
+.about-description {
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.illustration-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-illustration {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   COMO FUNCIONA - CONTAINER
+========================================================= */
+
+.como-funciona-container {
+    background-color: #c4c4c4;
+    border-radius: 40px;
+    padding: 50px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================================================
+   COMO FUNCIONA - TÍTULO
+========================================================= */
+
+.titulo-secao {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   COMO FUNCIONA - CARDS
+========================================================= */
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 35px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-placeholder {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-placeholder svg {
+    width: 100%;
+    height: 100%;
+    fill: #ffffff;
+}
+
+.card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.3;
+    max-width: 90%;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   COMO FUNCIONA - BOTÃO PROJETO
+========================================================= */
+
+.btn-projeto {
+    background-color: #00b050;
+    color: #ffffff;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1.6rem;
+    padding: 15px 45px;
+    border: 3px solid #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 4px 5px 0px #000000;
+    transition: all 0.1s ease;
+}
+
+.btn-projeto:hover {
+    background-color: #009944;
+}
+
+.btn-projeto:active {
+    box-shadow: 1px 1px 0px #000000;
+    transform: translate(3px, 4px);
+}
+
+
+/* =========================================================
+   SERVIÇOS - SEÇÃO
+========================================================= */
+
+.servicos-section {
+    background-color: #000000;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   SERVIÇOS - CONTAINER
+========================================================= */
+
+.servicos-container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.9fr;
+    gap: 40px;
+    align-items: center;
+}
+
+
+/* =========================================================
+   SERVIÇOS - TÍTULO
+========================================================= */
+
+.titulo-servicos {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 3.2rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   SERVIÇOS - BOTÕES
+========================================================= */
+
+.lista-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-servico {
+    background-color: #00b050;
+    color: #ffffff;
+    font-family: 'Impact', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 176, 80, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-servico:hover {
+    background-color: #009944;
+    transform: scale(1.02);
+}
+
+.btn-servico.selecionado {
+    background-color: #ff0000;
+    transform: scale(1.02);
+}
+
+
+/* =========================================================
+   SERVIÇOS - DESCRIÇÃO
+========================================================= */
+
+.descricao-servicos {
+    height: 120px;
+    margin-bottom: 45px;
+    color: #cccccc;
+
+    transition: opacity 0.25s ease, transform 0.25s ease;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.descricao-servicos.trocando {
+    opacity: 0;
+    transform: translateY(5px);
+}
+
+
+/* =========================================================
+   NOSSOS PROJETOS - CARROSSEL
+========================================================= */
+
+.projetos-carrossel {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    border-radius: 45px;
+    overflow: hidden;
+    box-shadow: none;
+    position: relative;
+    background-color: transparent;
+}
+
+.carrossel-slides,
+.carrossel-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.carrossel-slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.45s ease;
+    text-decoration: none;
+}
+
+.carrossel-slide.ativo {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.projetos-titulo,
+.carrossel-controle,
+.carrossel-indicadores {
+    position: absolute;
+    z-index: 2;
+}
+
+.projetos-titulo {
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 2.35rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.logo-projeto {
+    display: block;
+    width: min(78%, 330px);
+    max-height: 58%;
+    object-fit: contain;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.carrossel-slide:hover .logo-projeto,
+.carrossel-slide:focus-visible .logo-projeto {
+    transform: translateY(-14px) scale(1.04);
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.4));
+}
+
+.carrossel-controle {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border: 0;
+    border-radius: 50%;
+    background: #151515;
+    color: #ffffff;
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.carrossel-controle:hover,
+.carrossel-controle:focus-visible {
+    background-color: #00b050;
+    transform: translateY(-50%) scale(1.08);
+}
+
+.anterior {
+    left: 16px;
+}
+
+.proximo {
+    right: 16px;
+}
+
+.carrossel-indicadores {
+    display: flex;
+    gap: 8px;
+    bottom: 18px;
+    right: 20px;
+}
+
+.indicador {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 1px solid #151515;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.indicador.ativo {
+    background-color: #00b050;
+}
+
+
+/* =========================================================
+   SERVIÇOS - COLUNA DIREITA
+========================================================= */
+
+.coluna-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 1.55rem;
+    height: 100%;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   SERVIÇOS - CARDS DE DESTAQUE
+========================================================= */
+
+.card-callout {
+    border-radius: 40px;
+    padding: 30px;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-cinza {
+    background-color: #dbdbdb;
+    color: #000000;
+}
+
+.card-vermelho {
+    background-color: #ff0000;
+    color: #000000;
+}
+
+.texto-pequeno {
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.4;
+    max-width: 80%;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.card-footer h3 {
+    font-family: 'Impact', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-footer h3.alinhado-direita {
+    text-align: right;
+}
+
+
+/* =========================================================
+   SERVIÇOS - BOTÕES CIRCULARES
+========================================================= */
+
+.btn-circular {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.btn-circular:hover {
+    transform: rotate(-45deg) scale(1.08);
+}
+
+.btn-circular.verde {
+    background-color: #00b050;
+    color: #ffffff;
+}
+
+.btn-circular.preto {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-circular svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* =========================================================
+   JOGOS - SEÇÃO RETRÔ
+========================================================= */
+
+.jogos-section {
+    width: 100%;
+    padding: 10px 20px 60px;
+}
+
+.jogos-card {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 420px;
+    margin: 0 auto;
+    padding: 55px 70px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #111;
+    background-image: linear-gradient(rgba(0, 176, 80, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 176, 80, 0.1) 1px, transparent 1px);
+    background-size: 22px 22px;
+    border: 4px solid #00b050;
+    box-shadow: 10px 10px 0 #ff0000;
+}
+
+.jogos-conteudo {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+}
+
+.jogos-fase {
+    margin-bottom: 16px;
+    color: #00b050;
+    font-size: .85rem;
+    letter-spacing: 2px;
+}
+
+.jogos-conteudo h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4.3rem);
+    line-height: .9;
+    text-transform: uppercase;
+}
+
+.jogos-conteudo h2 span {
+    color: #ff0000;
+}
+
+.jogos-conteudo>p:not(.jogos-fase) {
+    max-width: 620px;
+    color: #e6e6e6;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+.btn-jogos {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+    padding: 15px 22px;
+    background: #00b050;
+    box-shadow: 5px 5px 0 #fff;
+    color: #000;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.btn-jogos:hover,
+.btn-jogos:focus-visible {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 #fff;
+}
+
+.jogos-arcade {
+    width: 210px;
+    padding: 14px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    background: #00b050;
+    border: 5px solid #000;
+    box-shadow: 7px 7px 0 #ff0000;
+    transform: rotate(4deg);
+}
+
+.arcade-tela {
+    height: 140px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    overflow: hidden;
+    background: #000;
+    border: 5px solid #004820;
+    color: #00b050;
+    font-family: 'Impact', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.pixel {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #ff0000;
+}
+
+.pixel-1 {
+    top: 25px;
+    left: 28px;
+}
+
+.pixel-2 {
+    top: 52px;
+    right: 34px;
+    background: #00b050;
+}
+
+.pixel-3 {
+    top: 20px;
+    right: 70px;
+    width: 9px;
+    height: 9px;
+    background: #fff;
+}
+
+.arcade-controles {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    color: #000;
+}
+
+.direcional {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.botao-arcade {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff0000;
+    border: 2px solid #000;
+}
+
+.botao-arcade+.botao-arcade {
+    margin-left: -42px;
+}
+
+.jogos-decoracao {
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    transform: rotate(-20deg);
+}
+
+.jogos-decoracao span {
+    width: 42px;
+    height: 8px;
+    background: #ff0000;
+}
+
+.jogos-decoracao-esquerda {
+    bottom: 30px;
+    left: -10px;
+}
+
+/* =========================================================
+   RESPONSIVIDADE - MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* =====================================================
+       BODY
+    ===================================================== */
+
+    body {
+        gap: 3rem;
+        overflow-x: hidden;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero-container {
+        width: 94%;
+        padding: 30px 20px 40px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tagline {
+        font-size: 0.75rem;
+        margin-bottom: 15px;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+
+    /* =====================================================
+       HERO - BOTÕES
+    ===================================================== */
+
+    .btn-group {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+
+    /* =====================================================
+       HERO - IMAGEM
+    ===================================================== */
+
+    .hero-image-container {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .image-bg-circle {
+        width: 270px;
+        height: 270px;
+    }
+
+    .hero-person {
+        height: 112%;
+    }
+
+
+    /* =====================================================
+       DECORAÇÕES
+    ===================================================== */
+
+    .lines-top-left {
+        top: 15px;
+    }
+
+    .line-1 {
+        width: 40px;
+    }
+
+    .line-2 {
+        width: 55px;
+    }
+
+    .line-3 {
+        width: 48px;
+    }
+
+
+    /* =====================================================
+       FEATURES
+    ===================================================== */
+
+    .features-section {
+        margin-top: -20px;
+        margin-bottom: -1rem;
+        padding: 0 20px;
+    }
+
+    .features-text {
+        font-size: 1.8rem;
+        line-height: 1.1;
+        margin-bottom: 18px;
+    }
+
+    .features-divider {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       SOBRE NÓS
+    ===================================================== */
+
+    .about-section {
+        padding: 10px 15px;
+    }
+
+    .about-card {
+        width: 100%;
+        padding: 30px 20px 40px;
+        border-radius: 30px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-left {
+        width: 100%;
+        max-width: 100%;
+        gap: 25px;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .about-title {
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    .code-box-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .code-image {
+        height: 180px;
+        border-radius: 20px;
+    }
+
+    .btn-team {
+        font-size: 0.9rem;
+        padding: 10px 22px;
+        bottom: -13px;
+    }
+
+
+    /* =====================================================
+       SOBRE NÓS - DIREITA
+    ===================================================== */
+
+    .about-right {
+        width: 100%;
+        max-width: 100%;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .about-description {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .illustration-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about-illustration {
+        width: 100%;
+        max-width: 330px;
+        border-radius: 25px;
+    }
+
+
+    /* =====================================================
+       COMO FUNCIONA
+    ===================================================== */
+
+    .como-funciona-container {
+        width: 94%;
+        padding: 35px 20px;
+        border-radius: 30px;
+    }
+
+    .titulo-secao {
+        font-size: 2.2rem;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+
+
+    /* =====================================================
+       COMO FUNCIONA - CARDS
+    ===================================================== */
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 35px;
+    }
+
+    .card {
+        border-radius: 25px;
+        padding: 25px 20px;
+    }
+
+    .icon-placeholder {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+    .card h3 {
+        font-size: 1.05rem;
+    }
+
+    .card p {
+        font-size: 0.85rem;
+    }
+
+
+    /* =====================================================
+       COMO FUNCIONA - BOTÃO
+    ===================================================== */
+
+    .btn-projeto {
+        font-size: 1.2rem;
+        padding: 12px 30px;
+    }
+
+
+    /* =====================================================
+       SERVIÇOS
+    ===================================================== */
+
+    .servicos-section {
+        padding: 40px 15px;
+        min-height: auto;
+    }
+
+    .servicos-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+
+    /* =====================================================
+       SERVIÇOS - TÍTULO
+    ===================================================== */
+
+    .titulo-servicos {
+        font-size: 2.4rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    /* =====================================================
+       SERVIÇOS - BOTÕES
+    ===================================================== */
+
+    .lista-botoes {
+        gap: 12px;
+    }
+
+    .btn-servico {
+        width: 100%;
+        font-size: 1.35rem;
+        padding: 11px 20px;
+    }
+
+
+    /* =====================================================
+       SERVIÇOS - DESCRIÇÃO
+    ===================================================== */
+
+    .descricao-servicos {
+        height: 150px;
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    /* =====================================================
+       SERVIÇOS - IMAGEM
+    ===================================================== */
+
+    .projetos-carrossel {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .projetos-titulo {
+        top: 22px;
+        font-size: 1.9rem;
+    }
+
+    .logo-projeto {
+        width: min(74%, 260px);
+        max-height: 55%;
+    }
+
+
+    /* =====================================================
+       SERVIÇOS - COLUNA DIREITA
+    ===================================================== */
+
+    .coluna-direita {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+
+
+    /* =====================================================
+       SERVIÇOS - CARDS DE DESTAQUE
+    ===================================================== */
+
+    .card-callout {
+        height: 200px;
+        padding: 25px;
+        border-radius: 30px;
+    }
+
+    .texto-pequeno {
+        font-size: 0.8rem;
+        max-width: 90%;
+    }
+
+    .card-footer h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-circular {
+        width: 48px;
+        height: 48px;
+    }
+
+    .btn-circular svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .jogos-section {
+        padding: 0 15px 40px;
+    }
+
+    .jogos-card {
+        min-height: auto;
+        padding: 42px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+        box-shadow: 6px 6px 0 #ff0000;
+    }
+
+    .jogos-fase {
+        font-size: .68rem;
+        letter-spacing: 1.3px;
+    }
+
+    .jogos-conteudo h2 {
+        font-size: 2.55rem;
+    }
+
+    .jogos-conteudo>p:not(.jogos-fase) {
+        font-size: .92rem;
+    }
+
+    .btn-jogos {
+        font-size: .82rem;
+        padding: 13px 16px;
+    }
+
+    .jogos-arcade {
+        width: 175px;
+        align-self: center;
+    }
+
+    .arcade-tela {
+        height: 115px;
+        font-size: 1.6rem;
+    }
+
+}

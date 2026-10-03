@@ -820,84 +820,18 @@ body {
     box-shadow: 2px 2px 0 #fff;
 }
 
-.jogos-arcade {
-    width: 210px;
-    padding: 14px;
+.jogos-console {
+    width: 300px;
     flex-shrink: 0;
     position: relative;
     z-index: 1;
-    background: #00b050;
-    border: 5px solid #000;
-    box-shadow: 7px 7px 0 #ff0000;
     transform: rotate(4deg);
 }
 
-.arcade-tela {
-    height: 140px;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 20px;
-    overflow: hidden;
-    background: #000;
-    border: 5px solid #004820;
-    color: #00b050;
-    font-family: 'Impact', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 2px;
-}
-
-.pixel {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background: #ff0000;
-}
-
-.pixel-1 {
-    top: 25px;
-    left: 28px;
-}
-
-.pixel-2 {
-    top: 52px;
-    right: 34px;
-    background: #00b050;
-}
-
-.pixel-3 {
-    top: 20px;
-    right: 70px;
-    width: 9px;
-    height: 9px;
-    background: #fff;
-}
-
-.arcade-controles {
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 12px;
-    color: #000;
-}
-
-.direcional {
-    font-size: 2rem;
-    line-height: 1;
-}
-
-.botao-arcade {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #ff0000;
-    border: 2px solid #000;
-}
-
-.botao-arcade+.botao-arcade {
-    margin-left: -42px;
+.jogos-console img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .jogos-decoracao {
@@ -993,40 +927,11 @@ body {
        HERO - IMAGEM
     ===================================================== */
 
-    .hero-image-container {
-        min-width: 0;
-        width: 100%;
-    }
-
-    .image-bg-circle {
-        width: 270px;
-        height: 270px;
-    }
-
     .hero-person {
-        height: 112%;
+        height: 25rem;
+        object-fit: cover;
     }
 
-
-    /* =====================================================
-       DECORAÇÕES
-    ===================================================== */
-
-    .lines-top-left {
-        top: 15px;
-    }
-
-    .line-1 {
-        width: 40px;
-    }
-
-    .line-2 {
-        width: 55px;
-    }
-
-    .line-3 {
-        width: 48px;
-    }
 
 
     /* =====================================================
@@ -1329,14 +1234,9 @@ body {
         padding: 13px 16px;
     }
 
-    .jogos-arcade {
+    .jogos-console {
         width: 175px;
         align-self: center;
-    }
-
-    .arcade-tela {
-        height: 115px;
-        font-size: 1.6rem;
     }
 
 }

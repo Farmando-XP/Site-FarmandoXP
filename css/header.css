@@ -78,8 +78,6 @@
 
     .navbar a:last-child {
         justify-self: end;
-        font-size: 0.62rem;
-        letter-spacing: -0.5px;
         white-space: nowrap;
     }
 
